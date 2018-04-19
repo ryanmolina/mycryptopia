@@ -45,4 +45,5 @@ if (true || empty($crypton_blog_header_video)) {
 	// Header for single posts
 	//get_template_part( 'templates/header-single' );
 
-?></header>
+?>
+</header>

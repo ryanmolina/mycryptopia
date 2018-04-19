@@ -46,13 +46,13 @@
 					crypton_blog_show_layout($crypton_blog_menu_main);
 					// Mobile menu button
 					?>
-					<div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
-						<a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
-							<span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
-						</a>
-					</div>
 				</div>
 			</div>
 		</div><!-- /.columns_wrap -->
+		<div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
+			<a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
+				<span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
+			</a>
+		</div>
 	</div><!-- /.content_wrap -->
 </div><!-- /.top_panel_navi -->

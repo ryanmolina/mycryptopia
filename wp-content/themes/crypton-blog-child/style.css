@@ -55,13 +55,13 @@
 }
 
 .ico-calendar-desc {
-  color: #777;
+  	color: #777;
 	font-size: 12px;
 	line-height: 1.5em;
 }
 
 .ico-calendar-img {
-  float: left;
+  	/*float: left;*/
 	margin-right: 16px;
 	height: 64px;
 	width: 128px;
@@ -82,23 +82,33 @@
 }
 
 .status {
-  background-color: whitesmoke;
-  border-radius: 290486px;
-  color: #4a4a4a;
-  font-size: 12px;
-  height: 2em;
-  /* line-height: 1.5; */
-  padding-left: 0.875em;
+	background-color: whitesmoke;
+	border-radius: 290486px;
+	color: #4a4a4a;
+	font-size: 12px;
+	height: 2em;
+	/* line-height: 1.5; */
+	padding-left: 0.875em;
 	padding-right: 0.875em;
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 .status.is-upcoming {
-  background-color: #3273dc;
-  color: #fff;
+	background-color: #3273dc;
+	color: #fff;
 }
 
 .status.is-live {
-  background-color: #ffdd57;
-  color: rgba(0, 0, 0, 0.7);
+	background-color: #ffdd57;
+	color: rgba(0, 0, 0, 0.7);
 }
+
+.status.is-ending {
+	background-color: #dc3545;
+	color: #fff;
+}
+
+.load-more-container {
+	text-align: center;
+}
+
