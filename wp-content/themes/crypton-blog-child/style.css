@@ -102,3 +102,12 @@
   background-color: #ffdd57;
   color: rgba(0, 0, 0, 0.7);
 }
+
+.ccpw_table {
+	width: 100%;
+}
+
+.textwidget a,
+.textwidget h2 {
+	display: none;
+}
