@@ -1,0 +1,25 @@
+[
+	{
+		"name": "BlockIO Cloud Wallet Adapter",
+		"description": "Allows your Bitcoin and Altcoin Wallets WordPress plugin to interface with your block.io cloud wallet account.",
+		"homepage": "https://www.dashed-slug.net/bitcoin-altcoin-wallets-wordpress-plugin/block-io-cloud-wallet-adapter-extension",
+		"support": "https://www.dashed-slug.net/forums/forum/block-io-cloud-wallet-adapter-extension-support/",
+		"slug": "wallets-blockio"
+	},
+
+	{
+		"name": "CoinPayments Adapter",
+		"description": "Allows your Bitcoin and Altcoin Wallets WordPress plugin to interface with your CoinPayments.net cloud wallet account.",
+		"homepage": "https://www.dashed-slug.net/bitcoin-altcoin-wallets-wordpress-plugin/coinpayments-adapter-extension",
+		"support": "https://www.dashed-slug.net/forums/forum/coinpayments-net-coin-adapter-extension-support/",
+		"slug": "wallets-cp"
+	},
+
+	{
+		"name": "Full Node Multi Coin Adapter",
+		"description": "Allows the Bitcoin and Altcoin Wallets WordPress plugin to connect to a large number of Bitcoin-like full node wallets via their JSON RPC API.",
+		"homepage": "https://www.dashed-slug.net/bitcoin-altcoin-wallets-wordpress-plugin/full-node-multi-coin-adapter-extension",
+		"support": "https://www.dashed-slug.net/forums/forum/full-node-multi-coin-adapter-extension-support/",
+		"slug": "wallets-multiadapter"
+	}
+]

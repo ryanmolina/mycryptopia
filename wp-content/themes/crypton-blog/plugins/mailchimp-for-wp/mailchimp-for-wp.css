@@ -1,0 +1,98 @@
+/* MailChimp for WP styles
+----------------------------------------------------------------- */
+form.mc4wp-form {
+	position:relative;
+	padding-right: 0;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="email"] {
+	width: 100%;
+    padding: 1em 13em 1em 1em;
+	vertical-align:top;
+    -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 48px;
+    line-height: 28px;
+    border: none;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="submit"] {
+	position: relative;
+	z-index:1;
+	right: 0;
+	top: 0;
+	width:100%;
+	vertical-align:top;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 1em 0 2.8em !important;
+    -webkit-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+form.mc4wp-form .mc4wp-alert {
+	margin: 1.5em 0;
+	padding: 1em;
+	line-height:1.5em;
+}
+form.mc4wp-form input[type="email"] {
+    background-color: #ffffff;
+    color: #909297;
+}
+form.mc4wp-form input[type="email"]::-webkit-input-placeholder {color:#909297 !important; opacity: 1;}
+form.mc4wp-form input[type="email"]::-moz-placeholder          {color:#909297 !important; opacity: 1;}/* Firefox 19+ */
+form.mc4wp-form input[type="email"]:-moz-placeholder           {color:#909297 !important; opacity: 1;}/* Firefox 18- */
+form.mc4wp-form input[type="email"]:-ms-input-placeholder      {color:#909297 !important; opacity: 1;}
+form.mc4wp-form input[type="email"]:focus {
+    background-color: #ffffff;
+    color: #161d2c;
+}
+.wrap_for_icon {
+    position: absolute;
+    z-index:1;
+    right: 0;
+    top: 0;
+    width:150px;
+    vertical-align:top;
+    height: 48px;
+    line-height: 48px;
+}
+.wrap_for_icon:before {
+    content:'\e940';
+    font-family:'fontello';
+    position: absolute;
+    left: 1.7em;
+    top: 0;
+    display: block;
+    z-index: 2;
+    font-size: 0.88em;
+}
+
+
+
+
+
+/* in popup */
+.sc_popup form.mc4wp-form {
+    width: 82%;
+    margin: 0 auto;
+}
+.sc_popup form.mc4wp-form .mc4wp-form-fields input[type="email"] {
+    padding: 1em;
+    border: 1px solid #e6e6e6;
+}
+.sc_popup .wrap_for_icon {
+    position: relative;
+    width: 195px;
+    height: 48px;
+    line-height: 48px;
+    display: block;
+    margin: 2.5em auto 0;
+}
+.sc_popup form.mc4wp-form .mc4wp-form-fields input[type="submit"] {
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -ms-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+.sc_popup .wrap_for_icon:before {
+    left: 3.3em;
+}

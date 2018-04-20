@@ -1,0 +1,139 @@
+
+.ccpw-ticker-cont{
+  width:100%;
+  overflow: hidden;
+  cursor:pointer;
+}
+.ccpw-footer-ticker-fixedbar{
+position:fixed;    
+border-top: 1px solid #ccc;
+bottom: 0px!important; 
+font-family: Arial, Helvetica, sans-serif; 
+width:100%; 
+z-index:99999; 
+background: #fff;
+font-weight: bold;
+cursor: pointer;
+}
+
+.ccpw-header-ticker-fixedbar {
+position:fixed;    
+border-top: 1px solid #ccc;
+font-family: Arial, Helvetica, sans-serif; 
+width:100%; 
+z-index:99999; 
+background: #fff;
+font-weight: bold;
+cursor: pointer;
+}
+
+
+ul.marquee-content-items li{
+	float:left;
+	margin:0 10px;
+	list-style:none;
+}
+.ccpw-fixedbar {
+border-top: 1px solid #ccc;
+bottom: 0px!important; 
+ position:fixed;
+width:100%; 
+z-index:99999; 
+background: #fff;
+}
+
+ul.marquee-content-items li:after{
+	content: "|";
+	margin: 0 1em;
+}
+.coin-container img{
+	height:24px;
+   /* width: 20px;*/
+}
+.ticker td{
+	border: none;
+}
+.ccpw_widget .ccpw_table td{
+	border: none;
+}
+.ccpw_widget .ccpw_table tr{
+	border-bottom: 1px solid black;
+}
+.ccpw_table th{
+	border: none;
+}
+.ccpw_table span.name {
+	font-weight:bold;
+}
+.ccpw_table span.name {
+    font-size: 16px;
+    margin-left: 6px;
+}
+.ccpw_table span.coin_symbol{
+ font-size:14px;
+   
+}
+.ccpw-ticker-cont span.name {
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.ccpw-ticker-cont span.price {
+     font-size: 12px;
+    margin-left: 8px;
+}
+.ccpw_table  th, td{
+	border:0;
+	border-bottom:1px solid #cacaca!important;
+
+}
+.ccpw_table span.price {
+    font-size: 12px;
+    margin-left: 8px;
+}
+span.changes.up {
+    color: green;
+    margin-left: 3px;
+}
+span.changes.down {
+    color: red;
+	margin-left: 3px;
+}
+.image-coin{
+	width:40px;
+}
+.ccpw_icon img {
+    margin-left: 8px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+/* version 1.4 styles */
+
+.ccpw_table .ccpw_icon.ccpw_coin_logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+.ccpw_table .ccpw_icon.ccpw_coin_logo img{
+	height:32px;
+}
+.ccpw_table .ccpw_coin_info{
+ display: inline-block;
+    vertical-align: middle;
+    padding:8px 4px;
+}
+
+.ccpw_table tr td{
+	padding:8px 4px;
+}
+.tickercontainer {
+  /*  background-color: #ffffff;*/
+    margin-bottom: 2px;
+}
+@media only screen and (max-width: 500px) {
+.ccpw_coin_info .coin_symbol{
+	display:none;
+}
+}

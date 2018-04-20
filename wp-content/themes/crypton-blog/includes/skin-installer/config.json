@@ -1,0 +1,9 @@
+{
+	"skins" : {
+		"crypton-blog"      : "Blog",
+		"crypton-magazine" : "Magazine",
+		"crypton-shop"     : "Shop",
+		"crypton-coach"    : "Crypto Coach",
+		"crypton-corporate": "Crypto Corporate"
+	}
+}

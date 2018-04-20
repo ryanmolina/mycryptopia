@@ -1,0 +1,113 @@
+@charset 'utf-8';
+/*
+ Theme Name:   Crypton Blog Child Theme
+ Theme URI:    http://cryptonblog.themerex.net/
+ Description:  Crypton Blog Child Theme
+ Author:       Themerex
+ Author URI:   http://themerex.net/
+ Template:     crypton-blog
+ Version:      1.0
+ Tags:         light, inheritable theme options
+ Text Domain:  crypton-blog
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* ICO-Calendar */
+.ico-calendar{
+	border-radius: 0.25em;
+	border-collapse: collapse;
+	margin: 1em;
+}
+.ico-calendar-header {
+	border-bottom: 1px solid #ddd;
+	font-size: 0.85em;
+	font-weight: 600;
+	padding: 1em 1.5em;
+	text-align: left;
+}
+.ico-calendar-data {
+	font-weight: 400;
+	min-width: 200px;
+	padding: 1em 1.5em;
+}
+.ico-calendar-row {
+	display: none;
+	transition: background 0.25s ease;
+	border-bottom: 1px solid #ddd;
+	margin: 1em 1.5em;
+}
+
+.ico-calendar-row.active {
+	display: table-row;
+}
+
+.ico-calendar-row:hover {
+  	background: #ddd
+}
+
+.ico-calendar-days {
+  	color: #b0bec5;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+.ico-calendar-desc {
+  color: #777;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+.ico-calendar-img {
+  float: left;
+	margin-right: 16px;
+	height: 64px;
+	width: 128px;
+	position: relative;
+}
+
+.ico-calendar-img > img {
+	max-height: 100%;  
+	max-width: 100%; 
+	width: auto;
+	height: auto;
+	position: absolute;  
+	top: 0;  
+	bottom: 0;  
+	left: 0;  
+	right: 0;  
+	margin: auto;
+}
+
+.status {
+  background-color: whitesmoke;
+  border-radius: 290486px;
+  color: #4a4a4a;
+  font-size: 12px;
+  height: 2em;
+  /* line-height: 1.5; */
+  padding-left: 0.875em;
+	padding-right: 0.875em;
+  white-space: nowrap;
+}
+
+.status.is-upcoming {
+  background-color: #3273dc;
+  color: #fff;
+}
+
+.status.is-live {
+  background-color: #ffdd57;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.ccpw_table {
+	width: 100%;
+}
+
+.textwidget a,
+.textwidget h2 {
+	display: none;
+}

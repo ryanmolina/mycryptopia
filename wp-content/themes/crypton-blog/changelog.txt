@@ -1,0 +1,60 @@
+Version: 1.5
+    * Added new skin (Corporate)
+
+Version: 1.4.1
+    * Cryptocurrency All-in-One plugin included
+    * Styles are improved
+
+Version: 1.4
+    * M Chart plugin included
+    * Cryptocurrency Rocket Tools plugin included
+    * All skins updated (magazine,coach,shop)
+    * Styles are improved
+
+Version: 1.3.3 DEV
+    * Fixed template to display the Structured Data Snippets ( itemprop="publisher" in \templates\seo.php )
+
+Version: 1.3.2 DEV
+    * Trx Addons plugin updated (v.30)
+        \trx_addons\templates\tpl.login-popup.php
+        \trx_addons\js\trx_addons.front.js
+
+Version: 1.3.1
+    * Add navigation for main slider
+    * Add New Home Page (dark)
+    * Styles are improved (Add Button Animation)
+    * Add Body Style -> Boxed (without header)
+
+Version: 1.3
+    * Add plugin support: Cryptocurrency Rocket Tools
+    * Add plugin support: Live Crypto
+    * Add cpt Currency
+    * Trx Addons plugin updated (v.29.6.39)
+    * All skins updated (magazine,coach,shop)
+
+Version: 1.2.1
+    * Styles are improved
+    * Doc updated
+
+Version: 1.2
+    * Styles are improved
+    * Added three skins
+    (
+        - crypton-magazine
+        - crypton-coach
+        - crypton-shop
+    )
+
+Version: 1.1.1
+	* Styles are improved
+
+Version: 1.1
+	* Add 3 home pages
+	* Styles are improved
+	* Add plugins support: Cryptocurrency Price Ticker Widget, GoUrl WooCommerce Bitcoin
+
+Version: 1.0.1
+	* WordPress Version 4.9.1 ready
+	* All plugins updated
+
+Version: 1.0 (v.1.0.38)
