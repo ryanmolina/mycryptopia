@@ -22,6 +22,7 @@ if ( crypton_blog_need_page_title() ) {
 						<?php
 						// Post meta on the single post
 						if ( is_single() && false)  {
+
 							?><div class="sc_layouts_title_meta"><?php
 								crypton_blog_show_post_meta(apply_filters('crypton_blog_filter_post_meta_args', array(
 									'components' => 'categories,date,counters,edit',
@@ -31,7 +32,8 @@ if ( crypton_blog_need_page_title() ) {
 								);
 							?></div><?php
 						}
-						
+
+
 						// Blog/Post title
 						?><div class="sc_layouts_title_title"><?php
 							$crypton_blog_blog_title = crypton_blog_get_blog_title();
@@ -58,7 +60,7 @@ if ( crypton_blog_need_page_title() ) {
 							}
 							
 							// Category/Tag description
-							if ( is_category() || is_tag() || is_tax() ) 
+							if ( is_category() || is_tag() || is_tax() )
 								the_archive_description( '<div class="sc_layouts_title_description">', '</div>' );
 		
 						?></div><?php
