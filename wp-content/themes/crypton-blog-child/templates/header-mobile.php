@@ -183,7 +183,7 @@ if (crypton_blog_get_theme_option('header_mobile_enabled')) {
 				$crypton_blog_menu_mobile = sprintf('<nav class="menu_mobile_nav_area">%s</nav>', $crypton_blog_menu_mobile);
 			crypton_blog_show_layout(apply_filters('crypton_blog_filter_menu_mobile_layout', $crypton_blog_menu_mobile));
 		}
-
+		// MOBILE MENU SEARCH
 		echo "<div id='mobile_menu_search_wrap'>";
 		echo do_shortcode('[trx_sc_layouts_search style="normal" ajax="" hide_on_desktop="" hide_on_notebook="" hide_on_tablet="" hide_on_mobile=""]');
 		echo "</div id='mobile_menu_search_wrap'>";
