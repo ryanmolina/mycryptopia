@@ -120,6 +120,23 @@
 #header-img h1{
 	color:#ffffff;
 }
+.status.is-ending {
+	background-color: #dc3545;
+	color: #fff;
+}
+
+.load-more-container {
+	text-align: center;
+}
+
+#header-img{
+	background-color: #161d2c;
+	background-image: url(images/header-img.jpg);
+	
+}
+#header-img h1{
+	color:#ffffff;
+}
 
 
 /****************HOMEPAGE*****************/
@@ -163,20 +180,3 @@ crypto currency market home page
 	color: rgba(0, 0, 0, 0.7);
 }
 
-.status.is-ending {
-	background-color: #dc3545;
-	color: #fff;
-}
-
-.load-more-container {
-	text-align: center;
-}
-
-#header-img{
-	background-color: #161d2c;
-	background-image: url(images/header-img.jpg);
-	
-}
-#header-img h1{
-	color:#ffffff;
-}
