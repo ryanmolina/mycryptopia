@@ -111,3 +111,9 @@
 .textwidget h2 {
 	display: none;
 }
+
+.sidebar_inner
+.widget_fullwidth.widget_banner
+.image_wrap {
+	padding: 16px 0px;
+}
