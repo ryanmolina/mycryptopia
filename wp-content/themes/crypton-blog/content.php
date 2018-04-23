@@ -51,6 +51,7 @@ $crypton_blog_seo = crypton_blog_is_on(crypton_blog_get_theme_option('seo_snippe
 		<div class="post_header entry-header">
 			<?php
 			// Post title
+
 			if (!crypton_blog_sc_layouts_showed('title')) {
 				the_title( '<h3 class="post_title entry-title"'.($crypton_blog_seo ? ' itemprop="headline"' : '').'>', '</h3>' );
 			}
@@ -61,7 +62,7 @@ $crypton_blog_seo = crypton_blog_is_on(crypton_blog_get_theme_option('seo_snippe
 					'counters' => crypton_blog_array_get_keys_by_value(crypton_blog_get_theme_option('counters')),
 					'seo' => crypton_blog_is_on(crypton_blog_get_theme_option('seo_snippets'))
 					), 'single', 1)
-				);
+				);		
 			}
 			?>
 		</div><!-- .post_header -->

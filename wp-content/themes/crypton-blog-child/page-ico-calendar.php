@@ -28,15 +28,23 @@ $icoList = array_merge($result->ico->live, $result->ico->upcoming);
 		$daysBefore = round($daysBefore / (60 * 60 * 24));
 		
 		$daysAgo = ($now > $start_time) ? '<span class="status is-live">Live</span>' : '<span class="status is-upcoming">Upcoming</span>';
-		$daysBefore = ($daysBefore > 1) ? 'in '.$daysBefore.' days' : 'in '.$daysBefore.' day';
+
+		if ($daysBefore > 1) {
+			$daysBefore = 'in '.$daysBefore.' days';
+		} else if ($daysBefore == 0) {
+			$daysBefore = '<span class="status is-ending">Today</span>';
+		} else {
+			$daysBefore = 'in '.$daysBefore.' day';
+		}
 
 		echo '<tr class="ico-calendar-row">';
 		echo '<td class="ico-calendar-data">
 				<div class="ico-calendar-img">
 				  <img src="'.$ico->image.'">
-				</div>'
+				</div>
+				<strong>'
 				.$ico->name.
-				'<p class="ico-calendar-desc">'
+				'</strong><p class="ico-calendar-desc">'
 				.$ico->description.'<a href="'.$ico->url.'"> Learn more</a>
 			  </td>';
 		echo '<td class="ico-calendar-data">'
@@ -52,7 +60,9 @@ $icoList = array_merge($result->ico->live, $result->ico->upcoming);
 	  endforeach;?>
 	  </tbody>
 	</table>
-	<button class="load-more">Load more</button>
+	<div class="load-more-container">
+		<button class="load-more">Load more</button>
+	</div>
   </div>
 </div>
 <?php get_footer(); ?>

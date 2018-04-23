@@ -18,6 +18,7 @@ if ( crypton_blog_need_page_title() ) {
 			<div class="sc_layouts_column sc_layouts_column_align_center">
 				<div class="sc_layouts_item">
 					<div class="sc_layouts_title sc_align_center">
+						
 						<?php
 						// Post meta on the single post
 						if ( is_single() && false)  {

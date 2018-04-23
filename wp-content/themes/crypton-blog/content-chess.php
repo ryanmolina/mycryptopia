@@ -72,11 +72,12 @@ $crypton_blog_animation = crypton_blog_get_theme_option('blog_animation');
 											);
 			crypton_blog_show_layout($crypton_blog_post_meta);
 		?></div><!-- .entry-header -->
-	
+		
 		<div class="post_content entry-content">
 			<div class="post_content_inner">
 				<?php
 				$crypton_blog_show_learn_more = !in_array($crypton_blog_post_format, array('link', 'aside', 'status', 'quote'));
+
 				if (has_excerpt()) {
 					the_excerpt();
 				} else if (strpos(get_the_content('!--more'), '!--more')!==false) {
@@ -89,7 +90,8 @@ $crypton_blog_animation = crypton_blog_get_theme_option('blog_animation');
 					else
 						the_excerpt();
 				} else if (substr(get_the_content(), 0, 1)!='[') {
-					the_excerpt();
+					// comment this to maintain the blogs for full size
+					// the_excerpt();
 				}
 				?>
 			</div>
