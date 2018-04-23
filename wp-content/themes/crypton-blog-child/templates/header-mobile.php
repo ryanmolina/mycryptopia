@@ -1,31 +1,43 @@
+<!-- MOBILE MENU SEARCH IMPLEMENTATION -->
 <style type="text/css">
-	#mobile_menu_search_wrap {
-	    display: inline-block;
-	    position: relative;
-	    width: 100%;
-	    margin: 0 auto;
-	}
+#mobile_menu_search_wrap {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+}
 
-	/* SEARCH INPUT FIELD */
-	#mobile_menu_search_wrap .search_field {
-	    font-size: 18px;
-	    padding: 5px !important;
-	}
+/* SEARCH INPUT FIELD */
+#mobile_menu_search_wrap .search_field {
+    font-size: 18px;
+    padding: 5px !important;
+    line-height: normal !important;
+    width: 60%;
+    border: 1px solid #5f5f5f;
+    background-color: #16161b;
+}
 
-	/* SEARCH BUTTON */
-	#mobile_menu_search_wrap .search_submit {
-	    padding: 5px;
-	    text-align: center;
-	    display: inline-block;
-	    position: relative;
-	    background-color: red;
-	    height: 30px;
-	}
+/* SEARCH BUTTON */
+#mobile_menu_search_wrap .search_submit {
+    padding: 5px;
+    line-height: normal !important;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    background-color: #161d2c;
+    border: 1px solid #2e2d33 !important;
+    height: 33px;
+    width: 50px;
+    top: 3px;
+    left: -4px;
+}
 
-	/* SEARCH BUTTON ICON */
-	#mobile_menu_search_wrap .search_submit:before {
-	    font-size: 24px;
-	}
+/* SEARCH BUTTON ICON */
+#mobile_menu_search_wrap .search_submit:before {
+    font-size: 18px;
+    color: #ff8a00;
+    font-weight: bolder;
+}
 </style>
 
 <?php

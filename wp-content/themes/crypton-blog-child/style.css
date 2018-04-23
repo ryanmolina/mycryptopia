@@ -120,13 +120,30 @@
 #header-img h1{
 	color:#ffffff;
 }
+.status.is-ending {
+	background-color: #dc3545;
+	color: #fff;
+}
+
+.load-more-container {
+	text-align: center;
+}
+
+#header-img{
+	background-color: #161d2c;
+	background-image: url(images/header-img.jpg);
+	
+}
+#header-img h1{
+	color:#ffffff;
+}
 
 
 /****************HOMEPAGE*****************/
 
 /**************
 global css body header set bg
-************/
+**************/
 .scheme_default #page_preloader, .scheme_default.header_position_under .page_content_wrap, .scheme_default .page_wrap{
 	background: #fff !important;
 }
@@ -145,7 +162,7 @@ homepage content layer 1 blog post line
 
 /*************
 crypto currency market home page
-*********/
+************/
 .home-market{
 	background: #f5f5f7;
 	border: none;
@@ -157,26 +174,22 @@ crypto currency market home page
 .home-market table td{
 	border:none;
 	border-bottom: 1px solid #f1f1f3 !important;
-	
-
-	background-color: #ffdd57;
 	color: rgba(0, 0, 0, 0.7);
 }
-
-.status.is-ending {
-	background-color: #dc3545;
-	color: #fff;
+/***crypto currency title****/
+.title-blog-set h4{
+	font-weight: bold;
+}
+/***arrow title****/
+.scheme_default .widget .widget_title:after, .scheme_default .widget .widgettitle:after{
+	color:#fe733e;
+}
+/***arrow title****/
+.scheme_default .sc_title .sc_item_title:after{
+	color:#fe733e;
+}
+/***arrow title categories****/
+.scheme_default .cat_in_image>a, footer .scheme_default.vc_row .sc_recent_news_style_news-magazine-alter .cat_in_image>a{
+	background-color:#ff8a00;
 }
 
-.load-more-container {
-	text-align: center;
-}
-
-#header-img{
-	background-color: #161d2c;
-	background-image: url(images/header-img.jpg);
-	
-}
-#header-img h1{
-	color:#ffffff;
-}
