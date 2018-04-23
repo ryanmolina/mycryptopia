@@ -1,4 +1,4 @@
-<!-- MOBILE MENU CUSTOM STYLE -->
+<!-- MOBILE MENU SEARCH IMPLEMENTATION -->
 <style type="text/css">
 #mobile_menu_search_wrap {
     display: inline-block;
@@ -25,7 +25,7 @@
     display: inline-block;
     position: relative;
     background-color: #161d2c;
-    border: 1px solid #5f5f5f !important;
+    border: 1px solid #2e2d33 !important;
     height: 33px;
     width: 50px;
     top: 3px;
@@ -38,7 +38,6 @@
     color: #ff8a00;
     font-weight: bolder;
 }
-</style>
 
 <?php
 /**
