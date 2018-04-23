@@ -38,6 +38,7 @@
     color: #ff8a00;
     font-weight: bolder;
 }
+</style>
 
 <?php
 /**
