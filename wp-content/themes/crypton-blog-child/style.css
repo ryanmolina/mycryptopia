@@ -112,3 +112,11 @@
 	text-align: center;
 }
 
+#header-img{
+	background-color: #161d2c;
+	background-image: url(images/header-img.jpg);
+	
+}
+#header-img h1{
+	color:#ffffff;
+}

@@ -39,7 +39,6 @@ $crypton_blog_seo = crypton_blog_is_on(crypton_blog_get_theme_option('seo_snippe
 
 	do_action('crypton_blog_action_before_post_content');
 	?>
-
 	<div class="post_content entry-content">
 		<?php
 			the_content( );
