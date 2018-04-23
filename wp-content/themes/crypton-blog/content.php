@@ -62,7 +62,7 @@ $crypton_blog_seo = crypton_blog_is_on(crypton_blog_get_theme_option('seo_snippe
 					'counters' => crypton_blog_array_get_keys_by_value(crypton_blog_get_theme_option('counters')),
 					'seo' => crypton_blog_is_on(crypton_blog_get_theme_option('seo_snippets'))
 					), 'single', 1)
-				);
+				);		
 			}
 			?>
 		</div><!-- .post_header -->

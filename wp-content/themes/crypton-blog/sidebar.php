@@ -9,6 +9,7 @@
 
 if (crypton_blog_sidebar_present()) {
 	ob_start();
+	
 	$crypton_blog_sidebar_name = crypton_blog_get_theme_option('sidebar_widgets');
 	crypton_blog_storage_set('current_sidebar', 'sidebar');
 	if ( is_active_sidebar($crypton_blog_sidebar_name) ) {
