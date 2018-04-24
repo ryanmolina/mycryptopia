@@ -232,7 +232,38 @@ crypto currency market home page
 .scheme_default .cat_in_image>a, footer .scheme_default.vc_row .sc_recent_news_style_news-magazine-alter .cat_in_image>a{
 	background-color:#ff8a00;
 }
+/**************PRESS RELEASE WRAPPER********/
+/*****categrories remove****/
+.post_categories{
+	display:none;
+}
 
+/******press release bg****/
+.sc_recent_news .post_layout_news-announce-alter .post_title a>span{
+	background:transparent;
+}
+
+/****comment remove posst blog****/
+.trx_addons_icon-comment{
+	display:none !important;
+}
+
+
+/*****line on post bottom position remove****/ 
+.scheme_default .sc_recent_news_style_news-excerpt .post_content:after,
+.scheme_default .sc_recent_news_style_news-excerpt-modern-big .post_item .post_header:after {
+	display:none;
+}
+/***categories post**/
+.press-release-wrapper .post_categories a{
+	display: none !important;
+}
+
+body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
+	height: 350px;
+}
+
+/* WRAPPER FOR PLUGIN */
 .crypto-calculator .select_container {
 	display: inline-block;
 }
@@ -263,15 +294,6 @@ crypto currency market home page
     box-sizing: border-box;
 }
 
-.crypto-calculator .select_container {
-    width: 100%; 
-    position: relative; 
-    border: 1px solid #ddd;
-    -webkit-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px;
-    overflow: hidden;
-}
 
 @media (max-width: 959px) {
 .crypto-calculator .select_container {
@@ -298,16 +320,10 @@ crypto currency market home page
     z-index: 9;
 }
 
-
-.crypto-calculator > * {
+.crypto-calculator form > * {
     display: inline-block;
     font-size: 15px;
     vertical-align: middle;
-}
-
-.select_container
-select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]) {
-    visibility: visible;
 }
 
 @media (max-width: 1262px) {
@@ -328,14 +344,10 @@ select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]) {
 	}
 }
 
-/*@media (max-width: 959px) {
+@media (max-width: 959px) {
 	.crypto-calculator:after {
 	    background-size: 101%;
 	}
-}
-
-.textwidget:after {
-	background-image: url('images/bg_2.jpg');
 }
 
 .crypto-calculator {
@@ -347,10 +359,87 @@ select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]) {
 	    padding: 1.6em 1em 1.5em 1.3em;
 	}
 }
+
+@media (max-width: 1262px) {
+	.crypto-calculator form .currency1value {
+	    max-width: 30px;
+	}
+}
+
+.crypto-calculator form input {
+    width: auto;
+    padding: 0.35em 0 !important;
+    line-height: 1.2em !important;
+    height: 2.2em !important;
+    text-transform: uppercase;
+    background: transparent !important;
+    font-size: 15px;
+    font-weight: 500;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+@media (max-width: 1262px) {
+	.crypto-calculator .select_container select {
+	    height: 2.15em !important;
+	}
+}
+
+.select_container select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]) {
+    visibility: visible;
+}
+
+@media (max-width: 1262px) {
+	.crypto-calculator .select_container select {
+	    height: 2.15em !important;
+	}
+}
+
+.select_container select {
+    background: none !important;
+    border-color: transparent !important;
+    width: 100% !important;
+    padding-right: 3em !important;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.select_container, .select_container:after, .select_container select {
+    -webkit-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    transition: all ease .3s;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.crypto-calculator .select_container select {
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none !important;
+}
+
+.crypto-calculator .select_container select {
+    padding: 0.35em 0 !important;
+    line-height: 1.2em !important;
+    height: 2.2em !important;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: transparent !important;
+}
+
 .crypto-calculator {
     color: #ffffff;
     background-color: #f8b922;
 }
+
 .crypto-calculator {
     background-color: #f8b922;
     padding: 2em 1.3em 1.85em 1.55em;
@@ -361,6 +450,8 @@ select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]) {
     overflow: hidden;
 }
 
+
+/*
 .crypto-calculator:after {
     position: absolute;
     content: "";

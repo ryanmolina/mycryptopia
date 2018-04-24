@@ -62,6 +62,9 @@ if (false) {
 						top: -6px;
 						margin-left: -15px;
 					}
+					#navi_search_wrap .search_style_expand.search_opened {
+						background-color: transparent !important;
+					}
 					#navi_search_wrap input {
 				    width: 0px;
 				    position: relative;
@@ -72,9 +75,7 @@ if (false) {
 				    transition: width 0.5s;
 				    font-family: Ubuntu, sans-serif !important;
 				    font-size: 16px;
-
 				    font-weight: 300;
-
 					}
 
 					#navi_search_wrap .search_submit {
@@ -98,7 +99,7 @@ if (false) {
 					let $j = jQuery.noConflict();
 					$j('#navi_search_wrap .search_submit').click(function() {
 						if ($j('#navi_search_wrap input').width() === 0) {
-							$j('#navi_search_wrap input').css("width", "155px");
+							$j('#navi_search_wrap input').css("width", "100%");
 						} else {
 							$j('#navi_search_wrap input').css("width", "0px");
 						}
