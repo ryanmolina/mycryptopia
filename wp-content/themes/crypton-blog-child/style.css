@@ -192,4 +192,32 @@ crypto currency market home page
 .scheme_default .cat_in_image>a, footer .scheme_default.vc_row .sc_recent_news_style_news-magazine-alter .cat_in_image>a{
 	background-color:#ff8a00;
 }
+/**************PRESS RELEASE WRAPPER********/
+/*****categrories remove****/
+.post_categories{
+	display:none;
+}
 
+/******press release bg****/
+.sc_recent_news .post_layout_news-announce-alter .post_title a>span{
+	background:transparent;
+}
+
+/****comment remove posst blog****/
+.trx_addons_icon-comment{
+	display:none !important;
+}
+
+/*****line on post bottom position remove****/ 
+.scheme_default .sc_recent_news_style_news-excerpt .post_content:after,
+.scheme_default .sc_recent_news_style_news-excerpt-modern-big .post_item .post_header:after{
+	display:none;
+}
+/***categories post**/
+.press-release-wrapper .post_categories a{
+	display: none !important;
+}
+
+body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
+	height: 350px;
+}
