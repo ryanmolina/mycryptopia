@@ -22,9 +22,7 @@ $crypton_blog_counters = crypton_blog_is_inherit(crypton_blog_get_theme_option_f
 							? 'comments'
 							: crypton_blog_array_get_keys_by_value(crypton_blog_get_theme_option('counters'));
 
-
-?>
-<div class="<?php echo $crypton_blog_blog_style[0] == 'classic' ? 'column' : 'masonry_item masonry_item'; ?>-1_<?php echo esc_attr($crypton_blog_columns); ?>"><article id="post-<?php the_ID(); ?>" 
+?><div class="<?php echo $crypton_blog_blog_style[0] == 'classic' ? 'column' : 'masonry_item masonry_item'; ?>-1_<?php echo esc_attr($crypton_blog_columns); ?>"><article id="post-<?php the_ID(); ?>" 
 	<?php post_class( 'post_item post_format_'.esc_attr($crypton_blog_post_format)
 					. ' post_layout_classic post_layout_classic_'.esc_attr($crypton_blog_columns)
 					. ' post_layout_'.esc_attr($crypton_blog_blog_style[0]) 
