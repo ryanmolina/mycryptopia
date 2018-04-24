@@ -59,16 +59,19 @@ if (false) {
 					#navi_search_wrap {
 						display: inline-block;
 						width: 8%;
+						margin-left: -15px;
 					}
 					#navi_search_wrap input {
 				    width: 0px;
 				    position: relative;
 				    left: 31px;
 				    padding: 3px 5px !important;
-				    border-radius: 5px;
-				    border: 1px solid gray !important;
-				    background-color: #f7f7f7 !important;
+				    border-bottom: 1px solid gray !important;
+				    border-radius: 0px !important;
 				    transition: width 0.5s;
+				    font-family: Ubuntu, sans-serif !important;
+				    font-size: 16px;
+				    font-weight: 300;
 					}
 
 					#navi_search_wrap .search_submit {
@@ -76,6 +79,11 @@ if (false) {
 				    font-weight: bolder;
 				    background-color: #cccccc00;
 				    font-size: 23px;
+					}
+
+					#navi_search_wrap .search_submit:before {
+						color: #ff8a00 !important;
+						font-weight: bolder;
 					}
 				</style>
 
