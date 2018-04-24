@@ -58,7 +58,9 @@ if (false) {
 				<style type="text/css">
 					#navi_search_wrap {
 						display: inline-block;
+						position: relative;
 						width: 8%;
+						top: -6px;
 						margin-left: -15px;
 					}
 					#navi_search_wrap input {
@@ -71,7 +73,7 @@ if (false) {
 				    transition: width 0.5s;
 				    font-family: Ubuntu, sans-serif !important;
 				    font-size: 16px;
-				    font-weight: 300;
+				    font-weight: 400;
 					}
 
 					#navi_search_wrap .search_submit {
