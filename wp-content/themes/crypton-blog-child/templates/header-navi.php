@@ -98,7 +98,7 @@ if (false) {
 					let $j = jQuery.noConflict();
 					$j('#navi_search_wrap .search_submit').click(function() {
 						if ($j('#navi_search_wrap input').width() === 0) {
-							$j('#navi_search_wrap input').css("width", "155px");
+							$j('#navi_search_wrap input').css("width", "100%");
 						} else {
 							$j('#navi_search_wrap input').css("width", "0px");
 						}
