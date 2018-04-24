@@ -27,7 +27,7 @@ if (false) {
 			</div><?php
 			
 			// Attention! Don't place any spaces between columns!
-				?><div class="sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left sc_layouts_column_fluid column-8_12">
+				?><div class="sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left sc_layouts_column_fluid column-7_12">
 					<div class="sc_layouts_item">
 						<?php
 						// Main menu
@@ -59,7 +59,6 @@ if (false) {
 					#navi_search_wrap {
 						display: inline-block;
 						position: relative;
-						width: 8%;
 						top: -6px;
 						margin-left: -15px;
 					}
@@ -91,8 +90,8 @@ if (false) {
 					}
 				</style>
 
-			<div id="navi_search_wrap">
-				<?php echo do_shortcode('[trx_sc_layouts_search style="expand" ajax="" hide_on_desktop="" hide_on_notebook="" hide_on_tablet="true" hide_on_mobile="true"]') ?>
+			<div id="navi_search_wrap" class=" column-2_12">
+				<?php echo do_shortcode('[trx_sc_layouts_search style="expand" ajax="" hide_on_desktop="" hide_on_notebook="" hide_on_tablet="" hide_on_mobile="true"]') ?>
 			</div>
 			<!-- NAV SEARCH CUSTOM SCRIPT  -->
 			<script type="text/javascript">
