@@ -138,12 +138,10 @@
 .prices-table {
 	width: 100%;
 }
+
 .prices-table td {
-	padding: 16px;
+	padding: 16px 0px;
 }
-/*.prices-table tr:nth-child(2n+1) > td + td {
-    color: #33b69a !important;
-}*/
 
 .status.is-ending {
 	background-color: #dc3545;
@@ -192,6 +190,7 @@ global css body header set bg
 
 .scheme_default .top_panel_default .top_panel_navi, .scheme_default.top_panel_default .top_panel_navi{
 	background: #fff !important;
+	margin-bottom: 4% !important;
 }
 
 /***************
@@ -250,9 +249,10 @@ crypto currency market home page
 	display:none !important;
 }
 
+
 /*****line on post bottom position remove****/ 
 .scheme_default .sc_recent_news_style_news-excerpt .post_content:after,
-.scheme_default .sc_recent_news_style_news-excerpt-modern-big .post_item .post_header:after{
+.scheme_default .sc_recent_news_style_news-excerpt-modern-big .post_item .post_header:after {
 	display:none;
 }
 /***categories post**/
@@ -263,61 +263,171 @@ crypto currency market home page
 body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
 	height: 350px;
 }
+
 /* WRAPPER FOR PLUGIN */
-/*.textwidget form {
-	background-color: #ffb400;
-	position: relative !important;
-	display: block !important;
-	height: 60px;
-	width: 80%;
-	transform: scale(1.1,1.1);
+.crypto-calculator .select_container {
+	display: inline-block;
 }
-*/
-/* GENERAL PROPERTIES */
-.textwidget form * {
-    font-size: 15px !important;
+
+.crypto-calculator .currency1value {
+    margin-right: 4px;
+    max-width: 50px;
+}
+
+.crypto-calculator .currency2value {
+    max-width: 78px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.crypto-calculator select {
     text-transform: uppercase;
-    vertical-align: middle !important;
+    margin-right: 4px;
+    max-width: 50px;
 }
 
-/* CALCULATOR H2 HIDE */
-.textwidget form h2 {
-    display: none;
+.select_container, .select_container:after, .select_container select {
+    -webkit-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    transition: all ease .3s;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* INPUT FIELDS WRAPPER */
-.textwidget form .textwidget form {
-    background-color: #000000a6;
-    border-radius: 3px;
-    padding: 0px 10px !important;
-    height: 60px;
-    width: 100%;
-    font-weight: bold !important;
+
+@media (max-width: 959px) {
+.crypto-calculator .select_container {
+    	width: 230px;
+	}
 }
 
-/* INPUT FIELDS */
-.textwidget form .currency1value,
-.textwidget form .currency2value {
-    background-color: #00000000 !important;
+.crypto-calculator .select_container {
+    width: 60px;
+    background: transparent !important;
     border: none !important;
-    color: white !important;
-    font-weight: !important;
-    width: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+.crypto-calculator {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 1em;
     position: relative;
-    padding: 0px 5px !important;
-    border-bottom: 1px solid whitesmoke !important;
-    border-radius: 0px;
+    z-index: 9;
 }
 
-/* CURRENCY#2 RESULT/INPUT */
-.textwidget form .currency2value {
-    width: 70px !important;
-    margin-right: 20px;
+.crypto-calculator form > * {
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
 }
 
+@media (max-width: 1262px) {
+	.crypto-calculator .select_container select {
+	    height: 2.15em !important;
+	}
+	.crypto-calculator .select_container select {
+	    padding: 0.35em 0 !important;
+	    line-height: 1.2em !important;
+	    height: 2.2em !important;
+	    text-transform: uppercase;
+	    font-size: 15px;
+	    background: transparent !important;
+	}
+	.crypto-calculator .select_container select {
+	    color: #797979;
+	    background: #ffffff !important;
+	}
+}
 
-/* CURRENCY DROPDOWN/<SELECT> ELEMENT - e.g. USD, EUR, etc */
-.textwidget form .currency_switcher {
+@media (max-width: 959px) {
+	.crypto-calculator:after {
+	    background-size: 101%;
+	}
+}
+
+.crypto-calculator {
+    background-color: #ffb400;
+}
+
+@media (max-width: 1262px) {
+	.crypto-calculator {
+	    padding: 1.6em 1em 1.5em 1.3em;
+	}
+}
+
+@media (max-width: 1262px) {
+	.crypto-calculator form .currency1value {
+	    max-width: 30px;
+	}
+}
+
+.crypto-calculator form input {
+    width: auto;
+    padding: 0.35em 0 !important;
+    line-height: 1.2em !important;
+    height: 2.2em !important;
+    text-transform: uppercase;
+    background: transparent !important;
+    font-size: 15px;
+    font-weight: 500;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+@media (max-width: 1262px) {
+	.crypto-calculator .select_container select {
+	    height: 2.15em !important;
+	}
+}
+
+.select_container select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]) {
+    visibility: visible;
+}
+
+@media (max-width: 1262px) {
+	.crypto-calculator .select_container select {
+	    height: 2.15em !important;
+	}
+}
+
+.select_container select {
+    background: none !important;
+    border-color: transparent !important;
+    width: 100% !important;
+    padding-right: 3em !important;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.select_container, .select_container:after, .select_container select {
+    -webkit-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    transition: all ease .3s;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.crypto-calculator .select_container select {
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none !important;
+}
+
+.crypto-calculator .select_container select {
     padding: 0.35em 0 !important;
     line-height: 1.2em !important;
     height: 2.2em !important;
@@ -326,34 +436,37 @@ body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
     background: transparent !important;
 }
 
-/* "POWERED BY --" TEXT HIDE */
-.textwidget form a[href="https://wordpress.org/plugins/cryptocurrency-prices/"],
-.textwidget form a[href="https://www.cryptocompare.com/api/"] {
-    display: none;
+.crypto-calculator {
+    color: #ffffff;
+    background-color: #f8b922;
 }
 
-/* SELECT DROPDOWN - E.G. USD, EUR */
-.textwidget form .select_container {
-    display: inline-block !important;
-    height: 2.2em;
-    border-radius: 0px;
+.crypto-calculator {
+    background-color: #f8b922;
+    padding: 2em 1.3em 1.85em 1.55em;
+    -webkit-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
 }
 
-/*DROP-DOWN CUSTOM ARROW STYLING*/
-.textwidget form .select_container:after {
-    text-align: right !important;
-    margin-right: -10px;
-    font-size: 30px !important;
-    color: #ff8a00 !important;
+
+
+.related_wrap .post_featured.with_thumb .cat_in_image {
+    display:none;
 }
 
-@media (max-width: 959px) {
-	.textwidget form :after {
-	    background-size: 101%;
-	}
-}
+.scheme_default h1 a:hover,.scheme_default h2 a:hover,.scheme_default h3 a:hover,.scheme_default h4 a:hover,.scheme_default h5 a:hover,.scheme_default h6 a:hover,.scheme_default li a:hover{color:#ff8a00}
 
-.textwidget form :after {
+.post_meta_item post_counters_item post_counters_comments .icon-comment-light {
+	display: none
+}
+.post_meta a.post_meta_item:before, .post_meta a.post_meta_item > .post_counters_number, .post_meta .post_meta_item.post_edit > a:before {
+	display: none;
+}
+/*
+.crypto-calculator:after {
     position: absolute;
     content: "";
     left: 0;
@@ -367,8 +480,35 @@ body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
     z-index: 1;
     background-size: 103%;
     background-position: -3px;
+}*/
+
+/*SINGLE POST and/or POSTS*/
+.post_featured .cat_in_image{
+	display:none;
 }
 
-.scheme_default .btc_calculator {
-    background-color: #ffb400;
+#disqus_thread{
+	border-top: 1px solid #eeeeee;
+    margin-top: 4.4rem;
+    padding-top: 3.9rem;
+}
+
+.scheme_default .author_bio .author_link{
+	display:none;
+}
+
+.scheme_default .related_wrap_title:after{
+	color:#ff8a00;
+}
+
+.scheme_default .post_meta_item .socials_share .social_items{
+	background-color: none !important;
+}
+.scheme_default .post_meta_item .social_items, .scheme_default .post_meta_item .social_items:before{
+	background-color: none !important;
+}
+
+/* FOOTER MARGIN-TOP REMOVE */
+.footer_wrap {
+	margin-top: 0px;
 }
