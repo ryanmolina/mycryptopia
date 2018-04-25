@@ -459,7 +459,7 @@ body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
 
 .scheme_default h1 a:hover,.scheme_default h2 a:hover,.scheme_default h3 a:hover,.scheme_default h4 a:hover,.scheme_default h5 a:hover,.scheme_default h6 a:hover,.scheme_default li a:hover{color:#ff8a00}
 
-post_meta_item post_counters_item post_counters_comments .icon-comment-light {
+.post_meta_item post_counters_item post_counters_comments .icon-comment-light {
 	display: none
 }
 /*
