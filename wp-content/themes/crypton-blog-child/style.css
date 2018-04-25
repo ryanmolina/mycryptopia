@@ -39,10 +39,6 @@
 	margin: 1em 0;
 }
 
-.ico-calendar-row:hover {
-  	background: #ddd;
-}
-
 .ico-calendar-days {
   	color: #b0bec5;
 	font-size: 12px;
