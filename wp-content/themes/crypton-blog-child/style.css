@@ -768,10 +768,11 @@ body .crypto-calculator .select_container select:focus {
 
 
 /*charts*/
-article .post_content.entry-content div{
-	/*height:440px !important;*/
+article .post_content.entry-content div div iframe{
+	height:440px !important;
 }
 
 .contacts_description p{
 	text-align: justify!important;
 }
+
