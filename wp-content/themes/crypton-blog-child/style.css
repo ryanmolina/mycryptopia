@@ -19,7 +19,6 @@
 .ico-calendar {
 	border-radius: 0.25em;
 	border-collapse: collapse;
-	margin: 1em;
 }
 .ico-calendar-header {
 	border-bottom: 1px solid #ddd;
@@ -30,14 +29,14 @@
 }
 .ico-calendar-data {
 	font-weight: 400;
-	min-width: 200px;
+    min-width: 200px;
 	padding: 1em 1.5em;
 }
 .ico-calendar-row {
 	display: none;
 	transition: background 0.25s ease;
 	border-bottom: 1px solid #ddd;
-	margin: 1em 1.5em;
+	margin: 1em 0;
 }
 
 .ico-calendar-row.active {
@@ -61,7 +60,6 @@
 }
 
 .ico-calendar-img {
-  	/*float: left;*/
 	margin-right: 16px;
 	height: 64px;
 	width: 128px;
@@ -80,6 +78,72 @@
 	right: 0;  
 	margin: auto;
 }
+
+/* Zebra striping */
+.ico-calendar-row:nth-of-type(odd) { 
+    background: #eee; 
+}
+
+/* 
+Max width before this PARTICULAR .ico-calendar gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 639px) {
+    /* Force .ico-calendar to not be like .ico-calendars anymore */
+    .ico-calendar,
+    .ico-calendar-head,
+    .ico-calendar-body,
+    .ico-calendar-header,
+    .ico-calendar-data,
+    .ico-calendar-row { 
+        display: block; 
+    }
+    
+    /* Hide .ico-calendar headers (but not display: none;, for accessibility) */
+    .ico-calendar-head .ico-calendar-row { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .ico-calendar-body .ico-calendar-row {
+        border: 1px solid #ccc;
+        position: relative; 
+    }
+    
+    .ico-calendar-data { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 30%;
+        vertical-align: top;
+        min-width: 0;
+    }
+
+    .ico-calendar-data:before { 
+        /* Now like a .ico-calendar header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        /* Label the data */
+        content: attr(data-column);
+        color: #000;
+        font-weight: bold;
+    }
+
+    .ico-calendar-data p {
+        margin: 0;
+    }
+
+}
+
 
 .status {
 	background-color: whitesmoke;
