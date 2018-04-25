@@ -35,10 +35,10 @@ $crypton_blog_seo = crypton_blog_is_on(crypton_blog_get_theme_option('seo_snippe
 			&& !crypton_blog_sc_layouts_showed('featured')
 			&& strpos(get_the_content(), '[trx_widget_banner]')===false) {
 		do_action('crypton_blog_action_before_post_featured');
-		crypton_blog_show_post_featured(array(
-			'post_info' => is_singular() ? '<div class="cat_in_image">'.crypton_blog_get_post_categories('').'</div>' : ''
-			)
-		);
+		// crypton_blog_show_post_featured(array(
+		// 	'post_info' => is_singular() ? '<div class="cat_in_image">'.crypton_blog_get_post_categories('').'</div>' : ''
+		// 	)
+		// );
 		do_action('crypton_blog_action_after_post_featured');
 	} else if (has_post_thumbnail()) {
 		?><meta itemprop="image" itemtype="http://schema.org/ImageObject" content="<?php echo esc_url(wp_get_attachment_url(get_post_thumbnail_id())); ?>"><?php
