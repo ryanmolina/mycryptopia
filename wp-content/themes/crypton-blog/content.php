@@ -51,7 +51,6 @@ $crypton_blog_seo = crypton_blog_is_on(crypton_blog_get_theme_option('seo_snippe
 		<div class="post_header entry-header">
 			<?php
 			// Post title
-
 			if (!crypton_blog_sc_layouts_showed('title')) {
 				the_title( '<h3 class="post_title entry-title"'.($crypton_blog_seo ? ' itemprop="headline"' : '').'>', '</h3>' );
 			}
