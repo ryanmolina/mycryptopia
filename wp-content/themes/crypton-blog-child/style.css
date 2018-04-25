@@ -33,18 +33,14 @@
 	padding: 1em 1.5em;
 }
 .ico-calendar-row {
-	display: none;
+    display: table-row;
 	transition: background 0.25s ease;
 	border-bottom: 1px solid #ddd;
 	margin: 1em 0;
 }
 
-.ico-calendar-row.active {
-	display: table-row;
-}
-
 .ico-calendar-row:hover {
-  	background: #ddd
+  	background: #ddd;
 }
 
 .ico-calendar-days {
@@ -79,11 +75,6 @@
 	margin: auto;
 }
 
-/* Zebra striping */
-.ico-calendar-row:nth-of-type(odd) { 
-    background: #eee; 
-}
-
 /* 
 Max width before this PARTICULAR .ico-calendar gets nasty
 This query will take effect for any screen smaller than 760px
@@ -115,7 +106,6 @@ and also iPads specifically.
     .ico-calendar-data { 
         /* Behave  like a "row" */
         border: none;
-        border-bottom: 1px solid #eee; 
         position: relative;
         padding-left: 30%;
         vertical-align: top;
