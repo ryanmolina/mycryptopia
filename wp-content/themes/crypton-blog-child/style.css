@@ -451,6 +451,16 @@ body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
 }
 
 
+
+.related_wrap .post_featured.with_thumb .cat_in_image {
+    display:none;
+}
+
+.related_wrap_title:after{
+	color:#ff8a00;
+}
+
+
 /*
 .crypto-calculator:after {
     position: absolute;
