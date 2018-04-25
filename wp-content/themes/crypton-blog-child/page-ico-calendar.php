@@ -43,7 +43,7 @@ $icoList = array_merge($result->ico->live, $result->ico->upcoming);
 			<strong>'
 			.$ico->name.
 			'</strong><p class="ico-calendar-desc">'
-			.$ico->description.'<a href="'.$ico->url.'"> Learn more</a>
+			.$ico->description.'<a href="'.$ico->icowatchlist_url.'"> Learn more</a>
 		  </td>';
 	echo '<td data-column="Start" class="ico-calendar-data">'
 			.date("M jS, Y", $start_time).
