@@ -91,7 +91,7 @@ if (false) {
 					}
 				</style>
 
-			<div id="navi_search_wrap" class=" column-2_12">
+			<div id="navi_search_wrap" class="column-2_12 hide_on_mobile">
 				<?php echo do_shortcode('[trx_sc_layouts_search style="expand" ajax="" hide_on_desktop="" hide_on_notebook="" hide_on_tablet="" hide_on_mobile="true"]') ?>
 			</div>
 			<!-- NAV SEARCH CUSTOM SCRIPT  -->

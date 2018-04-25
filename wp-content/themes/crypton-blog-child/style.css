@@ -190,6 +190,7 @@ global css body header set bg
 
 .scheme_default .top_panel_default .top_panel_navi, .scheme_default.top_panel_default .top_panel_navi{
 	background: #fff !important;
+	margin-bottom: 4% !important;
 }
 
 /***************
@@ -655,4 +656,48 @@ body .crypto-calculator .select_container select:focus {
     body .crypto-calculator .select_container {
         width: 53px;
     }
+}
+
+/*SINGLE POST and/or POSTS*/
+.post_featured .cat_in_image{
+	display:none;
+}
+
+#disqus_thread{
+	border-top: 1px solid #eeeeee;
+    margin-top: 4.4rem;
+    padding-top: 3.9rem;
+}
+
+.scheme_default .author_bio .author_link{
+	display:none;
+}
+
+.scheme_default .related_wrap_title:after{
+	color:#ff8a00;
+}
+
+.scheme_default .post_meta_item .socials_share .social_items{
+	background-color: none !important;
+}
+.scheme_default .post_meta_item .social_items, .scheme_default .post_meta_item .social_items:before{
+	background-color: none !important;
+}
+
+/* FOOTER MARGIN-TOP REMOVE */
+.footer_wrap {
+	margin-top: 0px;
+}
+
+.related_wrap .post_featured.with_thumb .cat_in_image {
+    display:none;
+}
+
+.scheme_default h1 a:hover,.scheme_default h2 a:hover,.scheme_default h3 a:hover,.scheme_default h4 a:hover,.scheme_default h5 a:hover,.scheme_default h6 a:hover,.scheme_default li a:hover{color:#ff8a00}
+
+.post_meta_item post_counters_item post_counters_comments .icon-comment-light {
+    display: none
+}
+.post_meta a.post_meta_item:before, .post_meta a.post_meta_item > .post_counters_number, .post_meta .post_meta_item.post_edit > a:before {
+    display: none;
 }
