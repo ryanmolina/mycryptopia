@@ -701,3 +701,13 @@ body .crypto-calculator .select_container select:focus {
 .post_meta a.post_meta_item:before, .post_meta a.post_meta_item > .post_counters_number, .post_meta .post_meta_item.post_edit > a:before {
     display: none;
 }
+
+
+/*charts*/
+article .post_content.entry-content div{
+	/*height:440px !important;*/
+}
+
+.contacts_description p{
+	text-align: justify!important;
+}
