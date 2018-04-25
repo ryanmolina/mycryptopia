@@ -36,8 +36,7 @@ if (true || empty($crypton_blog_header_video)) {
 		get_template_part( 'templates/header-navi' );
 	}
 
-	// Page title and breadcrumbs area
-	get_template_part( 'templates/header-title');
+	// Original location: get_template_part( 'templates/header-title');
 
 	// Header widgets area
 	get_template_part( 'templates/header-widgets' );
@@ -46,3 +45,7 @@ if (true || empty($crypton_blog_header_video)) {
 	//get_template_part( 'templates/header-single' );
 
 ?></header>
+<?php
+	// Page title and breadcrumbs area
+	get_template_part( 'templates/header-title');
+?>
