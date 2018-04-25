@@ -507,3 +507,8 @@ body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
 .scheme_default .post_meta_item .social_items, .scheme_default .post_meta_item .social_items:before{
 	background-color: none !important;
 }
+
+/* FOOTER MARGIN-TOP REMOVE */
+.footer_wrap {
+	margin-top: 0px;
+}
