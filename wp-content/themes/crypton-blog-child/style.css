@@ -461,6 +461,9 @@ body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
 .post_meta_item post_counters_item post_counters_comments .icon-comment-light {
 	display: none
 }
+.post_meta a.post_meta_item:before, .post_meta a.post_meta_item > .post_counters_number, .post_meta .post_meta_item.post_edit > a:before {
+	display: none;
+}
 /*
 .crypto-calculator:after {
     position: absolute;
