@@ -839,6 +839,14 @@ div.textwidget > div.crypto_prices_table > a{
 }
 
 .textwidget a {
+
     display:  none !important;
+}
+
+@media (max-width: 479px) {
+    .page_content_wrap .content_wrap,
+    .page_content_wrap .content_container{
+        width:90% !important;
+    }
 }
 
