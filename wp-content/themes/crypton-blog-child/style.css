@@ -20,6 +20,7 @@
 	border-radius: 0.25em;
 	border-collapse: collapse;
 }
+
 .ico-calendar-header {
 	border-bottom: 1px solid #ddd;
 	font-size: 0.85em;
@@ -27,11 +28,13 @@
 	padding: 1em 1.5em;
 	text-align: left;
 }
+
 .ico-calendar-data {
 	font-weight: 400;
     min-width: 200px;
 	padding: 1em 1.5em;
 }
+
 .ico-calendar-row {
     display: table-row;
 	transition: background 0.25s ease;
@@ -760,4 +763,148 @@ article .post_content.entry-content div{
 
 .contacts_description p{
 	text-align: justify!important;
+}
+
+/* Marketcap */
+.marketcap-table {
+    width: 100%;
+    border-radius: 0.25em;
+    border-collapse: collapse;
+}
+
+.marketcap-table-header {
+    border-bottom: 1px solid #ddd;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 1em 1.5em;
+    text-align: left;
+}
+
+.marketcap-table-data {
+    font-weight: 400;
+    padding: 1em 1.5em;
+}
+
+.marketcap-table-row {
+    display: table-row;
+    transition: background 0.25s ease;
+    border-bottom: 1px solid #ddd;
+    margin: 1em 0;
+}
+
+.marketcap-table-days {
+    color: #b0bec5;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.marketcap-table-desc {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.marketcap-table-img > img {
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+/* 
+Max width before this PARTICULAR .marketcap-table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 639px) {
+    /* Force .marketcap-table to not be like .marketcap-tables anymore */
+    .marketcap-table,
+    .marketcap-table-head,
+    .marketcap-table-body,
+    .marketcap-table-header,
+    .marketcap-table-data,
+    .marketcap-table-row { 
+        display: block; 
+    }
+    
+    /* Hide .marketcap-table headers (but not display: none;, for accessibility) */
+    .marketcap-table-head .marketcap-table-row { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .marketcap-table-body .marketcap-table-row {
+        border: 1px solid #ccc;
+        position: relative; 
+    }
+    
+    .marketcap-table-data { 
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 40%;
+        vertical-align: top;
+        min-width: 0;
+    }
+
+    .marketcap-table-data:before { 
+        /* Now like a .marketcap-table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        /* Label the data */
+        content: attr(data-column);
+        color: #000;
+        font-weight: bold;
+    }
+
+    .marketcap-table-data p {
+        margin: 0;
+    }
+
+}
+
+#toggle {
+    position:absolute;
+    appearance:none;
+    cursor:pointer;
+    left:-100%;
+    top:-100%;
+}
+
+#toggle + label {
+    position:absolute;
+    cursor:pointer;
+    background: #26ae90;
+    border-radius: 3px;
+    color: #FFF;
+    text-align:center;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    margin-left: 8px;
+    transition:all 500ms ease;
+}
+
+#toggle + label:after {
+    content:"DESC" 
+}
+
+#toggle:checked + label {
+    background:#dd6149;
+}
+
+#toggle:checked + label:after {
+    content:"ASCE"
 }
