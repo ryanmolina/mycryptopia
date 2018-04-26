@@ -15,6 +15,8 @@
     width: 60%;
     border: 1px solid #5f5f5f;
     background-color: #16161b;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 /* SEARCH BUTTON */
@@ -25,11 +27,13 @@
     display: inline-block;
     position: relative;
     background-color: #161d2c;
-    border: 1px solid #2e2d33 !important;
+    border: 1px solid #5f5f5f !important;
     height: 33px;
     width: 50px;
     top: 3px;
     left: -4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 /* SEARCH BUTTON ICON */
