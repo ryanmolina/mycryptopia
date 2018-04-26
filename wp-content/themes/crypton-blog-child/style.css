@@ -592,7 +592,7 @@ select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]) {
 
 .crypto-calculator form {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 100%;
     font-weight: 400;
     margin-bottom: 1em;
     position: relative;
