@@ -837,3 +837,8 @@ div.textwidget > div.crypto-calculator > a{
 div.textwidget > div.crypto_prices_table > a{
     display:  none !important;
 }
+
+.textwidget a {
+    display:  none !important;
+}
+
