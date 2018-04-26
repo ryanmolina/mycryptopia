@@ -762,6 +762,7 @@ article .post_content.entry-content div div iframe{
 	text-align: justify!important;
 }
 
+
 .nav-links-more a:hover {
     -webkit-animation: none !important;
     -ms-animation: none !important;
@@ -785,3 +786,15 @@ div#disqus_thread{
     
     display: none !important;
 }
+
+/* Sidebar links below */
+
+a[href="https://wordpress.org/plugins/cryptocurrency-prices/"] {
+    display:  none !important;
+}
+
+a[href="https://www.cryptocompare.com/api/"] {
+    display:  none !important;
+}
+
+
