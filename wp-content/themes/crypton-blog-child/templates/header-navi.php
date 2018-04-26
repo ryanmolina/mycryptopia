@@ -56,38 +56,46 @@ if (false) {
 				<!-- ->| NAV SEARCH HARDCODE -->
 				<!-- NAV SEARCH CUSTOM STYLE  -->
 				<style type="text/css">
-					#navi_search_wrap {
-						display: inline-block;
-						position: relative;
-						top: -6px;
-						margin-left: -15px;
+					 #navi_search_wrap {
+					    display: inline-block;
+					    position: relative;
+					    top: -3px;
+					    margin-left: -10px;
 					}
 					#navi_search_wrap .search_style_expand.search_opened {
-						background-color: transparent !important;
+					    background-color: transparent !important;
 					}
 					#navi_search_wrap input {
-				    width: 0px;
-				    position: relative;
-				    left: 31px;
-				    padding: 3px 5px !important;
-				    border-bottom: 1px solid gray !important;
-				    border-radius: 0px !important;
-				    transition: width 0.5s;
-				    font-family: Ubuntu, sans-serif !important;
-				    font-size: 16px;
-				    font-weight: 300;
+					    width: 0px;
+					    position: relative;
+					    left: 25px;
+					    padding: 3px 5px !important;
+					    border-bottom: 2px solid #ff8a00 !important;
+					    border-radius: 5px !important;
+					    transition: width 0.3s;
+					    font-family: Poppins, sans-serif !important;
+					    font-size: 14px;
+					    font-weight: 300;
+					    padding-bottom: 0px !important;
 					}
 
 					#navi_search_wrap .search_submit {
-				    color: #ff8a00 !important;
-				    font-weight: bolder;
-				    background-color: #cccccc00;
-				    font-size: 23px;
+					    font-weight: bolder;
+					    background-color: #cccccc00;
+					    font-size: 21px;
+					}
+
+					#navi_search_wrap .search_submit:hover {
+					    transform: scale(1.2);
 					}
 
 					#navi_search_wrap .search_submit:before {
-						color: #ff8a00 !important;
-						font-weight: bolder;
+					    color: #ff8a00 !important;
+					    font-weight: bolder;
+					}
+
+					#navi_search_wrap .search_submit:hover:before {
+					    color: #ffa73f !important;
 					}
 				</style>
 
@@ -101,7 +109,7 @@ if (false) {
 						if ($j('#navi_search_wrap input').width() === 0) {
 							$j('#navi_search_wrap input').css("width", "100%");
 						} else {
-							$j('#navi_search_wrap input').css("width", "0px");
+							$j('#navi_search_wrap input').css({"width": "0"});
 						}
 					});
 			</script>
