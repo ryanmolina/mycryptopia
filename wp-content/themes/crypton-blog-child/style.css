@@ -262,11 +262,21 @@ crypto currency market home page
 	width:90%;
 	margin: 0 auto;
 }
+.home-market table * {
+    vertical-align: middle;
+}
 .home-market table td{
 	border:none;
 	border-bottom: 1px solid #f1f1f3 !important;
 	color: rgba(0, 0, 0, 0.7);
 }
+
+
+.home-market a{
+    display:none !important;
+}
+
+
 /***crypto currency title****/
 .title-blog-set h4{
 	font-weight: bold;
@@ -361,10 +371,18 @@ table {
     width:90%;
     margin: 0 auto;
 }
+
+.crypto_prices_table table * {
+    vertical-align: middle;
+} 
 .crypto_prices_table table td{
     border:none;
     border-bottom: 1px solid #f1f1f3 !important;
     color: rgba(0, 0, 0, 0.7);
+}
+
+.crypto_prices_table a{
+    display: none !important;
 }
 
 /****** Crypto Calculator *****/
@@ -803,13 +821,13 @@ div#disqus_thread{
 
 /* Sidebar links below */
 
-a[href="https://wordpress.org/plugins/cryptocurrency-prices/"] {
+/*a[href="https://wordpress.org/plugins/cryptocurrency-prices/"] {
     display:  none !important;
 }
 
 a[href="https://www.cryptocompare.com/api/"] {
     display:  none !important;
-}
+}*/
 
 div.textwidget > div.crypto-calculator > a{
     display:  none !important;
