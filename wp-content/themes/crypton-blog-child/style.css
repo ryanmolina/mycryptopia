@@ -762,3 +762,26 @@ article .post_content.entry-content div div iframe{
 	text-align: justify!important;
 }
 
+.nav-links-more a:hover {
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    
+}
+
+.nav-links-more{
+    margin-bottom:4% !important;
+}
+.post-list{
+    display:none !important;
+}
+
+div#disqus_thread{
+    margin-bottom:4% !important;
+}
+
+
+#disqus_thread > iframe > #placement-bottom{
+    
+    display: none !important;
+}
