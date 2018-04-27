@@ -59,6 +59,6 @@ $icoList = array_merge($result->ico->live, $result->ico->upcoming);
   </tbody>
 </table>
 <div class="load-more-container">
-	<button class="load-more">Load more</button>
+	<button id="ico-calendar-load-more" class="load-more hvr-sweep-to-right">Load more</button>
 </div>
 <?php get_footer(); ?>
