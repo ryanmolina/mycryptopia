@@ -10,8 +10,6 @@ get_header();
 		<option value="volume">Volume 24H</option>
 		<option value="change">Change 24H</option>
     </select>
-<!--     <input type="checkbox" name="toggle" id="toggle" />
-    <label for="toggle"></label> -->
     <table class="marketcap-table" id="marketcap">
       	<thead class="marketcap-table-head">
         	<tr class="marketcap-table-row">
@@ -25,7 +23,9 @@ get_header();
     	</thead>
     	<tbody class="marketcap-table-body"></tbody>
     </table>
-    <button id="load-more-marketcap">Load More</button>
+    <div class="load-more-container">
+    	<button id="marketcap-load-more" class="load-more hvr-sweep-to-right">Load More</button>
+	</div>
 
 <?php
 get_footer();
