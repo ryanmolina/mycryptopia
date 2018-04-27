@@ -11,7 +11,7 @@
 #mobile_menu_search_wrap .search_field {
     font-size: 15px;
     padding: 5px !important;
-    line-height: inherit;
+    line-height: 19px !important;
     width: 60%;
     border: 1px solid #5f5f5f;
     background-color: #16161b;
@@ -22,7 +22,7 @@
 /* SEARCH BUTTON */
 #mobile_menu_search_wrap .search_submit {
 		padding: 5px;
-    line-height: inherit !important;
+    line-height: 19px !important;
     text-align: center;
     display: inline-block;
     position: relative;
