@@ -9,27 +9,31 @@
 
 /* SEARCH INPUT FIELD */
 #mobile_menu_search_wrap .search_field {
-    font-size: 18px;
+    font-size: 15px;
     padding: 5px !important;
-    line-height: normal !important;
+    line-height: 19px !important;
     width: 60%;
     border: 1px solid #5f5f5f;
     background-color: #16161b;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 /* SEARCH BUTTON */
 #mobile_menu_search_wrap .search_submit {
-    padding: 5px;
-    line-height: normal !important;
+		padding: 5px;
+    line-height: 19px !important;
     text-align: center;
     display: inline-block;
     position: relative;
     background-color: #161d2c;
-    border: 1px solid #2e2d33 !important;
-    height: 33px;
+    border: 1px solid #5f5f5f !important;
+    height: 31px;
     width: 50px;
     top: 3px;
     left: -4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 /* SEARCH BUTTON ICON */

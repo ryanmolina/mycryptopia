@@ -270,11 +270,21 @@ crypto currency market home page
 	width:90%;
 	margin: 0 auto;
 }
+.home-market table * {
+    vertical-align: middle;
+}
 .home-market table td{
 	border:none;
 	border-bottom: 1px solid #f1f1f3 !important;
 	color: rgba(0, 0, 0, 0.7);
 }
+
+
+.home-market a{
+    display:none !important;
+}
+
+
 /***crypto currency title****/
 .title-blog-set h4{
 	font-weight: bold;
@@ -369,10 +379,18 @@ table {
     width:90%;
     margin: 0 auto;
 }
+
+.crypto_prices_table table * {
+    vertical-align: middle;
+} 
 .crypto_prices_table table td{
     border:none;
     border-bottom: 1px solid #f1f1f3 !important;
     color: rgba(0, 0, 0, 0.7);
+}
+
+.crypto_prices_table a{
+    display: none !important;
 }
 
 /****** Crypto Calculator *****/
@@ -582,7 +600,7 @@ select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]) {
 
 .crypto-calculator form {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 100%;
     font-weight: 400;
     margin-bottom: 1em;
     position: relative;
@@ -1006,16 +1024,32 @@ div#disqus_thread{
 
 /* Sidebar links below */
 
-a[href="https://wordpress.org/plugins/cryptocurrency-prices/"] {
+/*a[href="https://wordpress.org/plugins/cryptocurrency-prices/"] {
     display:  none !important;
 }
 
 a[href="https://www.cryptocompare.com/api/"] {
     display:  none !important;
-}
+}*/
 
 div.textwidget > div.crypto-calculator > a{
     display:  none !important;
 }
 
+
+div.textwidget > div.crypto_prices_table > a{
+    display:  none !important;
+}
+
+.textwidget a {
+
+    display:  none !important;
+}
+/*for iphones*/
+/*@media (max-width: 479px) {
+    .page_content_wrap .content_wrap,
+    .page_content_wrap .content_container{
+        width:90% !important;
+    }
+}*/
 
