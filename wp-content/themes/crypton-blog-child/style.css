@@ -858,19 +858,43 @@ article .post_content.entry-content div div iframe{
     position: relative;
 }
 
-#marketcap thead .tablesorter-headerDesc:before,
+#marketcap thead .tablesorter-headerAsc:before,
 #marketcap thead .tablesorter-headerUnSorted:before {
     position: absolute;
     right: 8px;
     content: '\e938';
     font-family: 'fontello';
 }
+
 #marketcap thead .tablesorter-headerDesc:after,
 #marketcap thead .tablesorter-headerUnSorted:after {
     position: absolute;
     right: 16px;
     content: '\e93b';
     font-family: 'fontello';
+}
+
+.marketcap-sorting {
+    position: relative;
+    margin-top: 16px;
+}
+
+.marketcap-sort-category {
+    display: inline-block !important;
+    width: 80%;
+}
+
+#sort-by {
+    width: 15%;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    top: 45%;
+    transform: translateY(-60%);
+}
+
+#sort-by i {
+    font-size: 24px;
 }
 
 .tablesorter-header-inner {
