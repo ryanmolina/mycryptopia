@@ -34,7 +34,6 @@ get_header();
     <div class="load-more-container">
     	<button id="marketcap-load-more" class="load-more hvr-sweep-to-right">Load More</button>
 	</div>
-
 <?php
 get_footer();
 ?>

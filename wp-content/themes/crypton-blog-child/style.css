@@ -804,6 +804,7 @@ article .post_content.entry-content div div iframe{
 
 /* Marketcap */
 .marketcap-table {
+    margin-top: 32px;
     width: 100%;
     border-radius: 0.25em;
     border-collapse: collapse;
@@ -813,7 +814,7 @@ article .post_content.entry-content div div iframe{
     border-bottom: 1px solid #ddd;
     font-size: 0.85em;
     font-weight: 600;
-    padding: 1em 1.5em;
+    padding: 1.5em 3em;
     text-align: left;
 }
 
@@ -827,31 +828,6 @@ article .post_content.entry-content div div iframe{
     transition: background 0.25s ease;
     border-bottom: 1px solid #ddd;
     margin: 1em 0;
-}
-
-.marketcap-table-days {
-    color: #b0bec5;
-    font-size: 12px;
-    line-height: 1.5em;
-}
-
-.marketcap-table-desc {
-    color: #777;
-    font-size: 12px;
-    line-height: 1.5em;
-}
-
-.marketcap-table-img > img {
-    max-height: 100%;  
-    max-width: 100%; 
-    width: auto;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
-    margin: auto;
 }
 
 #marketcap thead th {
@@ -895,7 +871,34 @@ article .post_content.entry-content div div iframe{
 
 #sort-by i {
     font-size: 24px;
+    color: #b0bec5;
 }
+
+#sort-by i.active {
+    color: #4a4a4a;
+}
+
+.marketcap-table-data.negative {
+    color : red !important;
+}
+.marketcap-table-data.positive {
+    color : green;
+}
+
+/* .marketcap-table-data:after {
+    content: attr(data-value);
+    color: green;
+    font-size: 13px;
+    padding: 0px 21px;
+}
+
+.marketcap-table-data[data-value] {
+    color: transparent;
+}
+
+.marketcap-table-data[data-value^="-"]:after {
+    color: red;
+} */
 
 .tablesorter-header-inner {
     display: inline-block;
@@ -968,8 +971,14 @@ Max width before this PARTICULAR .marketcap-table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
+
+.marketcap-sorting {
+    display: none;
+}
+
 @media only screen and (max-width: 639px) {
     /* Force .marketcap-table to not be like .marketcap-tables anymore */
+    .marketcap-sorting,
     .marketcap-table,
     .marketcap-table-head,
     .marketcap-table-body,
@@ -1007,7 +1016,8 @@ and also iPads specifically.
         top: 50%;
         transform: translateY(-50%);
         left: 10px;
-        width: 45%; 
+        width: 45%;
+        font-size: 13px;
         padding-right: 10px; 
         white-space: nowrap;
         /* Label the data */
@@ -1017,6 +1027,10 @@ and also iPads specifically.
     }
 
     .marketcap-table-data p {
+        margin: 0;
+    }
+
+    .marketcap-table {
         margin: 0;
     }
 
