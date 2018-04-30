@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 	// Function helper for string format
-
 	var $sortCategory = $('#sort-category');
 	var $sortBy = $('#sort-by');
 	

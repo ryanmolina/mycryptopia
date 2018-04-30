@@ -1,7 +1,6 @@
 jQuery(document).ready(function($) {
 	'use strict';
 	// Function helper for string format
-	console.log('ICO Calendar loaded');
 	$('.ico-calendar-row:lt(10)').addClass('active');
   	var $rows = $('.ico-calendar-row');
 	var icoTableSize = $rows.length;

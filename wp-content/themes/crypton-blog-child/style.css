@@ -91,6 +91,10 @@ and also iPads specifically.
     .ico-calendar-row { 
         display: block; 
     }
+
+    .ico-calendar-row {
+        margin: 1em 0;
+    }
     
     /* Hide .ico-calendar headers (but not display: none;, for accessibility) */
     .ico-calendar-head .ico-calendar-row { 
@@ -222,6 +226,7 @@ and also iPads specifically.
 
 .load-more-container {
 	text-align: center;
+    margin: 16px 0;
 }
 
 #header-img{
