@@ -16,7 +16,7 @@ if (false) {
 	: crypton_blog_get_theme_option('menu_scheme'));
 }
 ?>">
-<div class="content_wrap">
+<div class="content_wrap img_menu">
 	<div class="columns_wrap columns_fluid">
 		<div class="sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left sc_layouts_column_fluid column-1_4">
 			<?php

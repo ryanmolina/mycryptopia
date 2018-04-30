@@ -795,6 +795,227 @@ article .post_content.entry-content div div iframe{
 }
 
 
+/* Marketcap */
+.marketcap-table {
+    margin-top: 32px;
+    width: 100%;
+    border-radius: 0.25em;
+    border-collapse: collapse;
+}
+
+.marketcap-table-header {
+    border-bottom: 1px solid #ddd;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 1.5em 3em;
+    text-align: left;
+}
+
+.marketcap-table-data {
+    font-weight: 400;
+    padding: 1em 1.5em;
+}
+
+.marketcap-table-row {
+    display: table-row;
+    transition: background 0.25s ease;
+    border-bottom: 1px solid #ddd;
+    margin: 1em 0;
+}
+
+#marketcap thead th {
+    position: relative;
+}
+
+#marketcap thead .tablesorter-headerAsc:before,
+#marketcap thead .tablesorter-headerUnSorted:before {
+    position: absolute;
+    right: 8px;
+    content: '\e938';
+    font-family: 'fontello';
+}
+
+#marketcap thead .tablesorter-headerDesc:after,
+#marketcap thead .tablesorter-headerUnSorted:after {
+    position: absolute;
+    right: 16px;
+    content: '\e93b';
+    font-family: 'fontello';
+}
+
+.marketcap-sorting {
+    position: relative;
+    margin-top: 16px;
+}
+
+.marketcap-sort-category {
+    display: inline-block !important;
+    width: 80%;
+}
+
+#sort-by {
+    width: 15%;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    top: 45%;
+    transform: translateY(-60%);
+}
+
+#sort-by i {
+    font-size: 24px;
+    color: #b0bec5;
+}
+
+#sort-by i.active {
+    color: #4a4a4a;
+}
+
+.marketcap-table-data.negative {
+    color : red;
+}
+
+.marketcap-table-data.positive {
+    color : green;
+}
+
+.tablesorter-header-inner {
+    display: inline-block;
+}
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+    display: inline-block;
+    background: transparent !important;
+    border: solid 1px #ff8a00 !important;
+    vertical-align: middle;
+    color: #000 !important;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff8a00 ;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white !important;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.hvr-sweep-to-right:after {
+    content: "";
+    height: 14px!important;
+    width: 26px!important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    top: 50%;
+    margin-top: -7px;
+    right: 25px;
+    display: block;
+    position:absolute;
+    -webkit-transition: opacity 0.3s ease-in-out 0s;
+    -moz-transition: opacity 0.3s ease-in-out 0s;
+    -o-transition: opacity 0.3s ease-in-out 0s;
+    transition: opacity 0.3s ease-in-out
+}
+
+/* 
+Max width before this PARTICULAR .marketcap-table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+
+.marketcap-sorting {
+    display: none;
+}
+
+@media only screen and (max-width: 639px) {
+    /* Force .marketcap-table to not be like .marketcap-tables anymore */
+    .marketcap-sorting,
+    .marketcap-table,
+    .marketcap-table-head,
+    .marketcap-table-body,
+    .marketcap-table-header,
+    .marketcap-table-data,
+    .marketcap-table-row { 
+        display: block; 
+    }
+    
+    /* Hide .marketcap-table headers (but not display: none;, for accessibility) */
+    .marketcap-table-head .marketcap-table-row { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .marketcap-table-body .marketcap-table-row {
+        border: 1px solid #ccc;
+        position: relative; 
+    }
+    
+    .marketcap-table-data { 
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 40%;
+        vertical-align: top;
+        min-width: 0;
+    }
+
+    .marketcap-table-data:before { 
+        /* Now like a .marketcap-table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        width: 45%;
+        font-size: 13px;
+        padding-right: 10px; 
+        white-space: nowrap;
+        /* Label the data */
+        content: attr(data-column);
+        color: #000;
+        font-weight: bold;
+    }
+
+    .marketcap-table-data p {
+        margin: 0;
+    }
+
+    .marketcap-table {
+        margin: 0;
+    }
+
+}
+
+
 .nav-links-more a:hover {
     -webkit-animation: none !important;
     -ms-animation: none !important;
