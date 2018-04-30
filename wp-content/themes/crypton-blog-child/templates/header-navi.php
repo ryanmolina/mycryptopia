@@ -16,7 +16,7 @@ if (false) {
 	: crypton_blog_get_theme_option('menu_scheme'));
 }
 ?>">
-<div class="content_wrap">
+<div class="content_wrap img_menu">
 	<div class="columns_wrap columns_fluid">
 		<div class="sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left sc_layouts_column_fluid column-1_4">
 			<?php
@@ -27,7 +27,7 @@ if (false) {
 			</div><?php
 			
 			// Attention! Don't place any spaces between columns!
-				?><div class="sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left sc_layouts_column_fluid column-7_12 sc_menu">
+				?><div class="sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left sc_layouts_column_fluid column-7_12">
 					<div class="sc_layouts_item">
 						<?php
 						// Main menu
@@ -56,8 +56,8 @@ if (false) {
 				<!-- ->| NAV SEARCH HARDCODE -->
 				<!-- NAV SEARCH CUSTOM STYLE  -->
 				<style type="text/css">
-				    .sc_menu {
-						padding: 0 !important;
+					.img_menu {
+
 					}
 					 #navi_search_wrap {
 					    display: inline-block;
