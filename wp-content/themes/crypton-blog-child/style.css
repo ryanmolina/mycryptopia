@@ -879,26 +879,12 @@ article .post_content.entry-content div div iframe{
 }
 
 .marketcap-table-data.negative {
-    color : red !important;
+    color : red;
 }
+
 .marketcap-table-data.positive {
     color : green;
 }
-
-/* .marketcap-table-data:after {
-    content: attr(data-value);
-    color: green;
-    font-size: 13px;
-    padding: 0px 21px;
-}
-
-.marketcap-table-data[data-value] {
-    color: transparent;
-}
-
-.marketcap-table-data[data-value^="-"]:after {
-    color: red;
-} */
 
 .tablesorter-header-inner {
     display: inline-block;
