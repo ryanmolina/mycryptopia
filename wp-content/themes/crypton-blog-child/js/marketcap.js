@@ -39,6 +39,7 @@ jQuery(document).ready(function($) {
 	var step = 5;
 	var start = 0;
 	function loadMoreMarketcap() {
+		$("#marketcap-load-more").attr("disabled", true);
 		$.ajax({
 		  url: "https://api.coinmarketcap.com/v1/ticker/?start={0}&limit={1}".format(start, step),
 		  type: 'GET',
@@ -54,11 +55,13 @@ jQuery(document).ready(function($) {
 			      );
 			      $('#marketcap').find('tbody').append($tr).trigger('addRows', [$tr, true]);
 			      $('#marketcap').trigger('update');
+				  $("#marketcap-load-more").attr("disabled", false);
 		      });
 			  start += step;
 		    }
 		}); 
 	}
+
 	// Initial 5 Marketcap	
 	loadMoreMarketcap();
 	// Add content when 'Load More' is clicked

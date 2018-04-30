@@ -813,6 +813,11 @@ article .post_content.entry-content div div iframe{
     border-collapse: collapse;
 }
 
+#marketcap-load-more:disabled {
+    opacity: 0.65; 
+    cursor: not-allowed;
+}
+
 .marketcap-table-header {
     border-bottom: 1px solid #ddd;
     font-size: 0.85em;
