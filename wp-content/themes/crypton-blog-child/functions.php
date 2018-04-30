@@ -11,5 +11,12 @@ function crypton_blog_child_scripts() {
     wp_enqueue_script('tablesorter-jquery', "https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.14/js/jquery.tablesorter.min.js", array('jquery'), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'crypton_blog_child_scripts' );
- 
+
+
+function defer_parsing_of_js ( $url ) {
+	if ( FALSE === strpos( $url, '.js' ) ) return $url;
+	if ( strpos( $url, 'jquery.js' ) ) return $url;
+	return "$url' defer ";
+}
+add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 ); 
 ?>
