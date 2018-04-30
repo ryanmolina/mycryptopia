@@ -56,9 +56,6 @@ if (false) {
 				<!-- ->| NAV SEARCH HARDCODE -->
 				<!-- NAV SEARCH CUSTOM STYLE  -->
 				<style type="text/css">
-					.img_menu {
-
-					}
 					 #navi_search_wrap {
 					    display: inline-block;
 					    position: relative;
