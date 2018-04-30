@@ -20,7 +20,6 @@
 	border-radius: 0.25em;
 	border-collapse: collapse;
 }
-
 .ico-calendar-header {
 	border-bottom: 1px solid #ddd;
 	font-size: 0.85em;
@@ -28,22 +27,16 @@
 	padding: 1em 1.5em;
 	text-align: left;
 }
-
 .ico-calendar-data {
 	font-weight: 400;
     min-width: 200px;
 	padding: 1em 1.5em;
 }
-
 .ico-calendar-row {
-    display: none;
-    transition: background 0.25s ease;
-    border-bottom: 1px solid #ddd;
-    margin: 1em 1.5em;
-}
-
-.ico-calendar-row.active {
     display: table-row;
+	transition: background 0.25s ease;
+	border-bottom: 1px solid #ddd;
+	margin: 1em 0;
 }
 
 .ico-calendar-days {
@@ -89,10 +82,11 @@ and also iPads specifically.
     .ico-calendar-head,
     .ico-calendar-body,
     .ico-calendar-header,
-    .ico-calendar-data { 
+    .ico-calendar-data,
+    .ico-calendar-row { 
         display: block; 
     }
-
+    
     /* Hide .ico-calendar headers (but not display: none;, for accessibility) */
     .ico-calendar-head .ico-calendar-row { 
         position: absolute;
@@ -133,9 +127,8 @@ and also iPads specifically.
     .ico-calendar-data p {
         margin: 0;
     }
+
 }
-
-
 
 
 .status {
@@ -207,7 +200,6 @@ and also iPads specifically.
 
 .load-more-container {
 	text-align: center;
-    margin: 16px;
 }
 
 #header-img{
@@ -802,6 +794,7 @@ article .post_content.entry-content div div iframe{
 	text-align: justify!important;
 }
 
+
 /* Marketcap */
 .marketcap-table {
     margin-top: 32px;
@@ -1021,6 +1014,7 @@ and also iPads specifically.
     }
 
 }
+
 
 .nav-links-more a:hover {
     -webkit-animation: none !important;
