@@ -1,9 +1,8 @@
 jQuery(document).ready(function($) {
 	// Function helper for string format
 	var $sortCategory = $('#marketcap-sort-category');
-	var $sortBy = $('#marketcap-sort-by');
-	
-	var selected = $sortCategory.add(':first-child').attr('value');
+	var $sortBy = $('#marketcap-sort-by');	
+	var selected = $sortCategory.add('option:first-child').attr('value');
 	$sortCategory.on('change',function() {
 		selected = $(this).find("option:selected").attr('value');
 		var tableHeader = '#marketcap-'+selected;

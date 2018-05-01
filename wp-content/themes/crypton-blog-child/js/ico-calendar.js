@@ -1,10 +1,7 @@
 jQuery(document).ready(function($) {
-	'use strict';
-
 	var $sortCategory = $('#ico-calendar-sort-category');
 	var $sortBy = $('#ico-calendar-sort-by');
-	
-	var selected = $sortCategory.add(':first-child').attr('value');
+	var selected = $sortCategory.add('option:first-child').attr('value');
 	$sortCategory.on('change',function() {
 		selected = $(this).find("option:selected").attr('value');
 		var tableHeader = '#ico-calendar-'+selected;

@@ -14,9 +14,6 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
-
-
-
 .status {
 	background-color: whitesmoke;
 	border-radius: 290486px;
@@ -210,45 +207,6 @@ crypto currency market home page
 body.expand_content .sc_recent_news_style_news-announce-alter .post_size_full{
 	height: 350px;
 }
-
-/***** Crypto Prices Table *****/
-/*.crypto_prices_table {
-    -webkit-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
-    background-color: #f5f5f7;
-    padding: 14px 22px 12px;
-}
-
-
-table {
-    border-collapse: collapse;
-    font-size: 14px;
-}
-
-.crypto_prices_table table * {
-    vertical-align: middle;
-}
-
-.crypto_prices_table table > tbody > tr:nth-child(2n+1) > td {
-    background: transparent !important;
-}
-.ccpw_table th, .crypto_prices_table .prices-table td {
-    border-bottom: 1px solid #ebebeb !important;
-}
-
-.scheme_default table td, .scheme_default table th + td, .scheme_default table td + td {
-    color: #797979;
-    border-color: #eeeeee;
-}
-
-.crypto_prices_table table td, .crypto_prices_table table th {
-    padding: 0.72em 0;
-    font-size: 15px;
-    font-weight: 400;
-    border: none;
-    color: #161d2c !important;
-}*/
 
 .crypto_prices_table{
     background: #f5f5f7;
@@ -682,7 +640,7 @@ article .post_content.entry-content div div iframe{
 }
 
 
-/* Marketcap */
+/* Table */
 .crypto-table {
     margin-top: 32px;
     width: 100%;
@@ -708,7 +666,7 @@ article .post_content.entry-content div div iframe{
     padding: 1em 1.5em;
 }
 
-#marketcap.crypto-table-data {
+#ico-calendar .crypto-table-data {
     min-width: 200px;
 }
 
@@ -758,14 +716,14 @@ article .post_content.entry-content div div iframe{
     transform: translateY(-60%);
 }
 
-.icon-arrow-down,
-.icon-arrow-up {
+.crypto-table-sorting-arrows .icon-arrow-down,
+.crypto-table-sorting-arrows .icon-arrow-up {
     font-size: 24px;
-    color: #b0bec5;
+    color: #ccc;
 }
 
-.icon-arrow-down.active,
-.icon-arrow-up.active {
+.crypto-table-sorting-arrows .icon-arrow-down.active,
+.crypto-table-sorting-arrows .icon-arrow-up.active {
     color: #4a4a4a;
 }
 
@@ -781,68 +739,6 @@ article .post_content.entry-content div div iframe{
     display: inline-block;
 }
 
-/* Sweep To Right */
-.hvr-sweep-to-right {
-    display: inline-block;
-    background: transparent !important;
-    border: solid 1px #ff8a00 !important;
-    vertical-align: middle;
-    color: #000 !important;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
-.hvr-sweep-to-right:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #ff8a00 ;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-    color: white !important;
-}
-.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.hvr-sweep-to-right:after {
-    content: "";
-    height: 14px!important;
-    width: 26px!important;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    top: 50%;
-    margin-top: -7px;
-    right: 25px;
-    display: block;
-    position:absolute;
-    -webkit-transition: opacity 0.3s ease-in-out 0s;
-    -moz-transition: opacity 0.3s ease-in-out 0s;
-    -o-transition: opacity 0.3s ease-in-out 0s;
-    transition: opacity 0.3s ease-in-out
-}
-
 /* 
 Max width before this PARTICULAR .crypto-table gets nasty
 This query will take effect for any screen smaller than 760px
@@ -851,6 +747,26 @@ and also iPads specifically.
 
 .crypto-table-sorting {
     display: none;
+}
+
+.crypto-table-img {
+    margin-right: 16px;
+    height: 64px;
+    width: 128px;
+    position: relative;
+}
+
+.crypto-table-img > img {
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
 }
 
 @media only screen and (max-width: 639px) {
@@ -864,7 +780,17 @@ and also iPads specifically.
     .crypto-table-row { 
         display: block; 
     }
-    
+
+    #ico-calendar .crypto-table-row .crypto-table-data {
+        min-width: 0 !important;
+        padding-left: 30% !important;
+    }
+
+    #marketcap .crypto-table-row .crypto-table-data {
+        min-width: 0 !important;
+        padding-left: 40% !important;
+    }
+
     /* Hide .crypto-table headers (but not display: none;, for accessibility) */
     .crypto-table-head .crypto-table-row { 
         position: absolute;
@@ -881,9 +807,7 @@ and also iPads specifically.
         /* Behave  like a "row" */
         border: none;
         position: relative;
-        padding-left: 40%;
         vertical-align: top;
-        min-width: 0;
     }
 
     .crypto-table-data:before { 
@@ -969,3 +893,64 @@ div.textwidget > div.crypto_prices_table > a{
     }
 }*/
 
+/* Sweep To Right */
+.hvr-sweep-to-right {
+    display: inline-block;
+    background: transparent !important;
+    border: solid 1px #ff8a00 !important;
+    vertical-align: middle;
+    color: #000 !important;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff8a00 ;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white !important;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.hvr-sweep-to-right:after {
+    content: "";
+    height: 14px!important;
+    width: 26px!important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    top: 50%;
+    margin-top: -7px;
+    right: 25px;
+    display: block;
+    position:absolute;
+    -webkit-transition: opacity 0.3s ease-in-out 0s;
+    -moz-transition: opacity 0.3s ease-in-out 0s;
+    -o-transition: opacity 0.3s ease-in-out 0s;
+    transition: opacity 0.3s ease-in-out
+}
