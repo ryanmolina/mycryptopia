@@ -15,135 +15,6 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
-/* ICO-Calendar */
-.ico-calendar {
-	border-radius: 0.25em;
-	border-collapse: collapse;
-}
-.ico-calendar-header {
-	border-bottom: 1px solid #ddd;
-	font-size: 0.85em;
-	font-weight: 600;
-	padding: 1em 1.5em;
-	text-align: left;
-}
-.ico-calendar-data {
-	font-weight: 400;
-    min-width: 200px;
-	padding: 1em 1.5em;
-}
-
-.ico-calendar-row {
-    display: none;
-    transition: background 0.25s ease;
-    border-bottom: 1px solid #ddd;
-    margin: 1em 1.5em;
-}
-
-.ico-calendar-row.active {
-    display: table-row;
-}
-
-.ico-calendar-days {
-  	color: #b0bec5;
-	font-size: 12px;
-	line-height: 1.5em;
-}
-
-.ico-calendar-desc {
-  	color: #777;
-	font-size: 12px;
-	line-height: 1.5em;
-}
-
-.ico-calendar-img {
-	margin-right: 16px;
-	height: 64px;
-	width: 128px;
-	position: relative;
-}
-
-.ico-calendar-img > img {
-	max-height: 100%;  
-	max-width: 100%; 
-	width: auto;
-	height: auto;
-	position: absolute;  
-	top: 0;  
-	bottom: 0;  
-	left: 0;  
-	right: 0;  
-	margin: auto;
-}
-
-/* 
-Max width before this PARTICULAR .ico-calendar gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
-@media only screen and (max-width: 639px) {
-    /* Force .ico-calendar to not be like .ico-calendars anymore */
-    .ico-calendar,
-    .ico-calendar-head,
-    .ico-calendar-body,
-    .ico-calendar-header,
-    .ico-calendar-data { 
-        display: block; 
-    }
-
-    .ico-calendar-row {
-        display: none;
-    }
-
-    .ico-calendar-row.active {
-        display: block;
-        transition: background 0.25s ease;
-        border-bottom: 1px solid #ddd;
-        margin: 1em 0;
-    }
-    
-    /* Hide .ico-calendar headers (but not display: none;, for accessibility) */
-    .ico-calendar-head .ico-calendar-row { 
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-    
-    .ico-calendar-body .ico-calendar-row {
-        border: 1px solid #ccc;
-        position: relative; 
-    }
-    
-    .ico-calendar-data { 
-        /* Behave  like a "row" */
-        border: none;
-        position: relative;
-        padding-left: 30%;
-        vertical-align: top;
-        min-width: 0;
-    }
-
-    .ico-calendar-data:before { 
-        /* Now like a .ico-calendar header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 50%;
-        transform: translateY(-50%);
-        left: 10px;
-        width: 45%; 
-        padding-right: 10px; 
-        white-space: nowrap;
-        /* Label the data */
-        content: attr(data-column);
-        color: #000;
-        font-weight: bold;
-    }
-
-    .ico-calendar-data p {
-        margin: 0;
-    }
-
-}
 
 
 .status {
@@ -812,19 +683,19 @@ article .post_content.entry-content div div iframe{
 
 
 /* Marketcap */
-.marketcap-table {
+.crypto-table {
     margin-top: 32px;
     width: 100%;
     border-radius: 0.25em;
     border-collapse: collapse;
 }
 
-#marketcap-load-more:disabled {
+.crypto-table-load-more:disabled {
     opacity: 0.65; 
     cursor: not-allowed;
 }
 
-.marketcap-table-header {
+.crypto-table-header {
     border-bottom: 1px solid #ddd;
     font-size: 0.85em;
     font-weight: 600;
@@ -832,49 +703,53 @@ article .post_content.entry-content div div iframe{
     text-align: left;
 }
 
-.marketcap-table-data {
+.crypto-table-data {
     font-weight: 400;
     padding: 1em 1.5em;
 }
 
-.marketcap-table-row {
+#marketcap.crypto-table-data {
+    min-width: 200px;
+}
+
+.crypto-table-row {
     display: table-row;
     transition: background 0.25s ease;
     border-bottom: 1px solid #ddd;
     margin: 1em 0;
 }
 
-#marketcap thead th {
+.crypto-table thead th {
     position: relative;
 }
 
-#marketcap thead .tablesorter-headerAsc:before,
-#marketcap thead .tablesorter-headerUnSorted:before {
+.crypto-table thead .tablesorter-headerAsc:before,
+.crypto-table thead .tablesorter-headerUnSorted:before {
     position: absolute;
     right: 8px;
     content: '\e938';
     font-family: 'fontello';
 }
 
-#marketcap thead .tablesorter-headerDesc:after,
-#marketcap thead .tablesorter-headerUnSorted:after {
+.crypto-table thead .tablesorter-headerDesc:after,
+.crypto-table thead .tablesorter-headerUnSorted:after {
     position: absolute;
     right: 16px;
     content: '\e93b';
     font-family: 'fontello';
 }
 
-.marketcap-sorting {
+.crypto-table-sorting {
     position: relative;
     margin-top: 16px;
 }
 
-.marketcap-sort-category {
+.crypto-table-sort-category {
     display: inline-block !important;
     width: 80%;
 }
 
-#sort-by {
+.crypto-table-sorting-arrows {
     width: 15%;
     margin-left: 10px;
     display: inline-block;
@@ -883,20 +758,22 @@ article .post_content.entry-content div div iframe{
     transform: translateY(-60%);
 }
 
-#sort-by i {
+.icon-arrow-down,
+.icon-arrow-up {
     font-size: 24px;
     color: #b0bec5;
 }
 
-#sort-by i.active {
+.icon-arrow-down.active,
+.icon-arrow-up.active {
     color: #4a4a4a;
 }
 
-.marketcap-table-data.negative {
+.crypto-table-data.negative {
     color : red;
 }
 
-.marketcap-table-data.positive {
+.crypto-table-data.positive {
     color : green;
 }
 
@@ -967,40 +844,40 @@ article .post_content.entry-content div div iframe{
 }
 
 /* 
-Max width before this PARTICULAR .marketcap-table gets nasty
+Max width before this PARTICULAR .crypto-table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
 
-.marketcap-sorting {
+.crypto-table-sorting {
     display: none;
 }
 
 @media only screen and (max-width: 639px) {
-    /* Force .marketcap-table to not be like .marketcap-tables anymore */
-    .marketcap-sorting,
-    .marketcap-table,
-    .marketcap-table-head,
-    .marketcap-table-body,
-    .marketcap-table-header,
-    .marketcap-table-data,
-    .marketcap-table-row { 
+    /* Force .crypto-table to not be like .crypto-tables anymore */
+    .crypto-table-sorting,
+    .crypto-table,
+    .crypto-table-head,
+    .crypto-table-body,
+    .crypto-table-header,
+    .crypto-table-data,
+    .crypto-table-row { 
         display: block; 
     }
     
-    /* Hide .marketcap-table headers (but not display: none;, for accessibility) */
-    .marketcap-table-head .marketcap-table-row { 
+    /* Hide .crypto-table headers (but not display: none;, for accessibility) */
+    .crypto-table-head .crypto-table-row { 
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
     
-    .marketcap-table-body .marketcap-table-row {
+    .crypto-table-body .crypto-table-row {
         border: 1px solid #ccc;
         position: relative; 
     }
     
-    .marketcap-table-data { 
+    .crypto-table-data { 
         /* Behave  like a "row" */
         border: none;
         position: relative;
@@ -1009,8 +886,8 @@ and also iPads specifically.
         min-width: 0;
     }
 
-    .marketcap-table-data:before { 
-        /* Now like a .marketcap-table header */
+    .crypto-table-data:before { 
+        /* Now like a .crypto-table header */
         position: absolute;
         /* Top/left values mimic padding */
         top: 50%;
@@ -1026,11 +903,11 @@ and also iPads specifically.
         font-weight: bold;
     }
 
-    .marketcap-table-data p {
+    .crypto-table-data p {
         margin: 0;
     }
 
-    .marketcap-table {
+    .crypto-table {
         margin: 0;
     }
 

@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 	// Function helper for string format
-	var $sortCategory = $('#sort-category');
-	var $sortBy = $('#sort-by');
+	var $sortCategory = $('#marketcap-sort-category');
+	var $sortBy = $('#marketcap-sort-by');
 	
 	var selected = $sortCategory.add(':first-child').attr('value');
 	$sortCategory.on('change',function() {
@@ -45,13 +45,13 @@ jQuery(document).ready(function($) {
 		  type: 'GET',
 		  success: function(data) {
 		  	  data.forEach(function(crypto) {
-			      $tr = $('<tr class="marketcap-table-row">').append(
-			          $('<td data-column="Rank" class="marketcap-table-data">').text(crypto.rank),
-			          $('<td data-column="Name" class="marketcap-table-data">').text(crypto.name),
-			          $('<td data-column="Price" class="marketcap-table-data">').text(crypto.price_usd).addClass(crypto.price_usd < 0 ? 'negative' : 'positive'),
-			          $('<td data-column="Market Cap" class="marketcap-table-data">').text(crypto.market_cap_usd).addClass(crypto.market_cap_usd < 0 ? 'negative' : 'positive'),
-			          $('<td data-column="Volume 24H" class="marketcap-table-data">').text(crypto['24h_volume_usd']).addClass(crypto['24_volume_usd'] < 0 ? 'negative' : 'positive'),
-			          $('<td data-column="Change 24H" class="marketcap-table-data">').text(crypto.percent_change_24h).addClass(crypto.percent_change_24h < 0 ? 'negative' : 'positive'),
+			      $tr = $('<tr class="crypto-table-row">').append(
+			          $('<td data-column="Rank" class="crypto-table-data">').text(crypto.rank),
+			          $('<td data-column="Name" class="crypto-table-data" style="font-weight: bold;">').text(crypto.name),
+			          $('<td data-column="Price" class="crypto-table-data">').text(crypto.price_usd).addClass(crypto.price_usd < 0 ? 'negative' : 'positive'),
+			          $('<td data-column="Market Cap" class="crypto-table-data">').text(crypto.market_cap_usd).addClass(crypto.market_cap_usd < 0 ? 'negative' : 'positive'),
+			          $('<td data-column="Volume 24H" class="crypto-table-data">').text(crypto['24h_volume_usd']).addClass(crypto['24_volume_usd'] < 0 ? 'negative' : 'positive'),
+			          $('<td data-column="Change 24H" class="crypto-table-data">').text(crypto.percent_change_24h).addClass(crypto.percent_change_24h < 0 ? 'negative' : 'positive'),
 			      );
 			      $('#marketcap').find('tbody').append($tr).trigger('addRows', [$tr, true]);
 			      $('#marketcap').trigger('update');

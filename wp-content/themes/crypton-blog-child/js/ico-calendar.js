@@ -1,6 +1,43 @@
 jQuery(document).ready(function($) {
 	'use strict';
+
+	var $sortCategory = $('#ico-calendar-sort-category');
+	var $sortBy = $('#ico-calendar-sort-by');
+	
+	var selected = $sortCategory.add(':first-child').attr('value');
+	$sortCategory.on('change',function() {
+		selected = $(this).find("option:selected").attr('value');
+		var tableHeader = '#ico-calendar-'+selected;
+		toggleSortingArrows(tableHeader);
+	});
+	$sortBy.on('click', function() {
+		var tableHeader = '#ico-calendar-'+selected;
+		$(tableHeader).click();
+		delay(function() {
+			toggleSortingArrows(tableHeader)
+		}
+		, 1); // I need to delay 1 millisecond to have the updated DOM.
+	});
+
+
+	var $arrowUp = $sortBy.add('.icon-arrow-up');
+	var $arrowDown = $sortBy.add('.icon-arrow-down');
+	function toggleSortingArrows(tableHeader) {
+		if ($(tableHeader).hasClass('tablesorter-headerDesc')) {
+			$arrowDown.removeClass('active');
+			$arrowUp.addClass('active');
+		} else if ($(tableHeader).hasClass('tablesorter-headerAsc')) {
+			$arrowDown.addClass('active');
+			$arrowUp.removeClass('active');
+		} else if ($(tableHeader).hasClass('tablesorter-headerUnSorted')) {
+			$arrowDown.removeClass('active');
+			$arrowUp.removeClass('active');
+		}
+	}
+
 	// Function helper for string format
+	$('#ico-calendar').tablesorter();
+
 	$('.ico-calendar-row:lt(10)').addClass('active');
   	var $rows = $('.ico-calendar-row');
 	var icoTableSize = $rows.length;
