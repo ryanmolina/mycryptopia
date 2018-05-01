@@ -87,12 +87,18 @@ and also iPads specifically.
     .ico-calendar-head,
     .ico-calendar-body,
     .ico-calendar-header,
-    .ico-calendar-data,
-    .ico-calendar-row { 
+    .ico-calendar-data { 
         display: block; 
     }
 
     .ico-calendar-row {
+        display: none;
+    }
+
+    .ico-calendar-row.active {
+        display: block;
+        transition: background 0.25s ease;
+        border-bottom: 1px solid #ddd;
         margin: 1em 0;
     }
     
