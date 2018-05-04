@@ -6,7 +6,7 @@
 Plugin Name: Cryptocurrency All-in-One
 Plugin URI: https://creditstocks.com/
 Description: Provides multiple cryptocurrency features: accepting payments, displaying prices and exchange rates, cryptocurrency calculator, accepting donations.
-Version: 2.5.3
+Version: 99999
 Author: Boyan Yankov
 Author URI: http://byankov.com/
 Text Domain: cryprocurrency-prices
