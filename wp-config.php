@@ -41,6 +41,10 @@ define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+define('FS_METHOD', 'direct' );
+define('FS_CHMOD_DIR', 0770);
+define('FS_CHMOD_FILE', 0660);
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
