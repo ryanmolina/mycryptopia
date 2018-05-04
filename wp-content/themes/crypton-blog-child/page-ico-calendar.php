@@ -63,11 +63,11 @@ $icoList = array_merge($result->ico->live, $result->ico->upcoming);
 			.$ico->description.'<a href="'.$ico->icowatchlist_url.'"> Learn more</a>
 		  </td>';
 	echo '<td data-column="Start" class="crypto-table-data">'
-			.date("m.d.y", $start_time).
+			.date("d.m.y", $start_time).
 			'<p class="crypto-table-days">'.$daysAgo.'</p>
 		  </td>';
 	echo '<td data-column="End" class="crypto-table-data">'
-			.date("m.d.y", $end_time).
+			.date("d.m.y", $end_time).
 			'<p class="crypto-table-days">'.$daysBefore.'</p>
 		  </td>';
 	echo '</tr>';
@@ -76,6 +76,6 @@ $icoList = array_merge($result->ico->live, $result->ico->upcoming);
   </tbody>
 </table>
 <div class="load-more-container">
-	<button id="crypto-table-load-more" class="load-more hvr-sweep-to-right">Load more</button>
+	<button id="ico-calendar-load-more" class="load-more hvr-sweep-to-right">Load more</button>
 </div>
 <?php get_footer(); ?>

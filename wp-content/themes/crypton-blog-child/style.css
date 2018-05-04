@@ -671,11 +671,18 @@ article .post_content.entry-content div div iframe{
 }
 
 .crypto-table-row {
-    display: table-row;
     transition: background 0.25s ease;
     border-bottom: 1px solid #ddd;
-    margin: 1em 0;
+    margin: 1em 1.5em;
 }
+
+#ico-calendar .crypto-table-row { 
+    display: none;
+}
+
+#ico-calendar .crypto-table-row.active {
+    display: table-row;
+ }
 
 .crypto-table thead th {
     position: relative;
@@ -776,8 +783,7 @@ and also iPads specifically.
     .crypto-table-head,
     .crypto-table-body,
     .crypto-table-header,
-    .crypto-table-data,
-    .crypto-table-row { 
+    .crypto-table-data { 
         display: block; 
     }
 
@@ -835,6 +841,17 @@ and also iPads specifically.
         margin: 0;
     }
 
+    #ico-calendar .crypto-table-row.active .crypto-table-data:last-child {
+        border-bottom: 1px solid #ccc;
+    }
+
+    #ico-calendar .crypto-table-row.active {
+        border-bottom: 1em solid #fff;
+    }
+
+    #ico-calendar .crypto-table-row.active .crypto-table-data:first-child {
+        border-top: 1px solid #ccc;
+    }
 }
 
 

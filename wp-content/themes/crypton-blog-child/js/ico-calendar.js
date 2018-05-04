@@ -33,10 +33,10 @@ jQuery(document).ready(function($) {
 	}
 
 	// Function helper for string format
-	$('#ico-calendar').tablesorter();
+	$('#ico-calendar').tablesorter({dateFormat: 'dd.mm.yyyy',});
 
-	$('.ico-calendar-row:lt(10)').addClass('active');
-  	var $rows = $('.ico-calendar-row');
+	$('#ico-calendar .crypto-table-row:lt(10)').addClass('active');
+  	var $rows = $('.crypto-table-row');
 	var icoTableSize = $rows.length;
 	var currentActiveIndex = $rows.filter('.active:last').index() + 1;
 
