@@ -36,9 +36,6 @@ dictionary.currency = [
     {text: "ZAR", id: "ZAR"}
 ];
 
-// var getUrl = window.location;
-// var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1] + "/" + getUrl.pathname.split('/')[2];
-
 dictionary.ticker = "https://api.coinmarketcap.com/v1/ticker/";
 dictionary.pluginName = pluginUrl;
 /** End Dictionary */
