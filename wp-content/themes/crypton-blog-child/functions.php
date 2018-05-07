@@ -2,6 +2,9 @@
 /**
  * Child-Theme functions and definitions
  */
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 
 function crypton_blog_child_scripts() {
 	$parent_style = 'crypton_blog-parent-style';
@@ -17,5 +20,6 @@ function crypton_blog_child_scripts() {
     wp_enqueue_script('tablesorter-jquery', "https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.14/js/jquery.tablesorter.min.js", array('jquery'), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'crypton_blog_child_scripts' );
+
 
 ?>
