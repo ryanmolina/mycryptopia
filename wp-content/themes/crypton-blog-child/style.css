@@ -971,3 +971,21 @@ div.textwidget > div.crypto_prices_table > a{
     -o-transition: opacity 0.3s ease-in-out 0s;
     transition: opacity 0.3s ease-in-out
 }
+
+.crtools-pricelist{
+    border:0px !important;
+}
+
+.crtools-pricelist .tab{
+    font-weight:500;
+}
+
+.crtools-pricelist .tab.active{
+    background: #ff8a00 !important;
+    color: #ffffff;
+}
+
+.crtools-pricelist .crtools-row{
+    font-size: 12px;
+    font-weight: normal;
+}
