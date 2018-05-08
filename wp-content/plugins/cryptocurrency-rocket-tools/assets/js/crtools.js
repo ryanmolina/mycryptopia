@@ -311,9 +311,7 @@ crtools.converter = {
 
             curTarget.closest(".calc").find("." + prop).removeClass(prop);
         }
-    $(document).ready(function(){
-        $(".sidebar_inner .calc .input-group-ct.from input").attr("value", 1)
-    });
+
     },
     initFrom: function (elems) {
         var from = {
@@ -337,9 +335,11 @@ crtools.converter = {
         return "";
     },
     removeCurrentClass: function () {
-
-    }
+    }, 
 };
+$(document).ready(function(){
+    $(".sidebar_inner .calc .input-group-ct.from input").attr("value", 1)
+});
 /** End Crypto Converter */
 /** Start Graph */
 var crtools = crtools || {};
