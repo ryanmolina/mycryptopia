@@ -2,7 +2,11 @@
 /**
  * Plugin Name: Cryptocurrency Rocket Tools
  * Description: Price ticker, table, graph, converter, price list of all cryptocurrencies.
+<<<<<<< HEAD
+ * Version: 999999
+=======
  * Version: 2.1
+>>>>>>> f0c10d062c2556f9f15d32a8d63aebc260089874
  * Author: Webstulle
  * Author URI: http://webstulle.com/
  * Text Domain: cryptocurrency-rocket-tools
@@ -15,6 +19,11 @@
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
+?>
+<script>
+    var pluginUrl = '<?php echo plugin_dir_url(__FILE__);?>';
+</script>
+<?php
 
 
 // Define plugin url global
@@ -51,7 +60,7 @@ function crtools() {
 
     wp_enqueue_script( 'jquery');
 
-    wp_enqueue_script( 'crtools', CRTOOLS_URL.'assets/js/crtools.min.js');
+    wp_enqueue_script( 'crtools', CRTOOLS_URL.'assets/js/crtools.js');
     wp_localize_script('crtools', 'crtoolsVars', $crtoolsVars );
 
     wp_enqueue_style( 'crtools-css', CRTOOLS_URL.'assets/css/main.css');
