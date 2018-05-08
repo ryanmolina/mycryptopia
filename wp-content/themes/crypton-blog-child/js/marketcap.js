@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 
 
 	$('#marketcap').tablesorter();
-	var step = 5;
+	var step = 10;
 	var start = 0;
 	function loadMoreMarketcap() {
 		$("#marketcap-load-more").attr("disabled", true);

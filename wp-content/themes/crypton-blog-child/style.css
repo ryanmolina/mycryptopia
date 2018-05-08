@@ -974,6 +974,7 @@ div.textwidget > div.crypto_prices_table > a{
 
 .crtools-pricelist{
     border:0px !important;
+    background-color: #f5f5f7;
 }
 
 .crtools-pricelist .tab{
@@ -986,6 +987,26 @@ div.textwidget > div.crypto_prices_table > a{
 }
 
 .crtools-pricelist .crtools-row{
-    font-size: 12px;
+    font-size: 85%;
     font-weight: normal;
 }
+
+.sc_recent_news_columns_wrap .post_item.post_accented_on{
+    height:auto !important;
+}
+
+.type-page > .post_content > div, 
+.wpb_wrapper .wpb_text_column .wpb_wrapper > div  {
+    height: auto !important;
+}
+
+
+.type-page > .post_content > div > div, 
+.wpb_wrapper .wpb_text_column .wpb_wrapper > div > div {
+    height: auto !important;
+}
+
+.posts_container.columns_wrap .post_layout_classic{
+    height: auto;
+}
+
