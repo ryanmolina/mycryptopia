@@ -127,7 +127,7 @@ crtools.converter = {
         var select = jQuery('<select class="input-group-addon-ct"></select>'),
             input = jQuery('<div><label></label>' +
                 '<div class="input-group-ct ' + (type == 'other' ? 'cr-other to' : '') + '" >' +
-                '<input type="number" class="form-control-ct">' +
+                '<input type="number" class="form-control-ct" value="1">' +
                 '</div></div>');
 
         input.find("input").on({
