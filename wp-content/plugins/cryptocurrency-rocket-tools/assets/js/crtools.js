@@ -132,7 +132,7 @@ crtools.converter = {
         let $jq = jQuery.noConflict();
         $jq(document).ready(function(){
             $jq(".sidebar_inner .calc .input-group-ct.from input").keyup(function() {
-                $(this).attr("value", 1)
+                $jq(this).attr("value", 1)
             })
         });
         input.find("input").on({
