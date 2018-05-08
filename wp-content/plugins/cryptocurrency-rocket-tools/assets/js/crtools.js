@@ -131,9 +131,8 @@ crtools.converter = {
                 '</div></div>');
         let $jq = jQuery.noConflict();
         $jq(document).ready(function(){
-            $jq(".sidebar_inner .calc .input-group-ct.from input").keyup(function() {
-                $jq(this).attr("value", 1)
-            })
+            $jq(".sidebar_inner .calc .input-group-ct.from input").attr("value", 1);
+            crtools.converter.initData(e);
         });
         input.find("input").on({
             keyup: function (e) {
