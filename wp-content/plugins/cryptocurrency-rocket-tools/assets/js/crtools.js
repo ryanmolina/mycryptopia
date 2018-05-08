@@ -299,7 +299,7 @@ crtools.converter = {
             };
 
             var val = curTarget.val(),
-                from = spanes.from.length != 0 ? spanes.from.html().replaceAll(" ", "") : curTarget.closest(".calc").find(".from select").val(1);
+                from = spanes.from.length != 0 ? spanes.from.html().replaceAll(" ", "") : curTarget.closest(".calc").find(".from select").val();
 
             if (val && val != "") {
                 curTarget.closest(".calc").find(".to").each(function (idx, element) {
@@ -311,6 +311,9 @@ crtools.converter = {
 
             curTarget.closest(".calc").find("." + prop).removeClass(prop);
         }
+    $(document).ready(function(){
+        $(".sidebar_inner .calc .input-group-ct.from input").attr("value", 1)
+    });
     },
     initFrom: function (elems) {
         var from = {
