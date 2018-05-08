@@ -129,7 +129,10 @@ crtools.converter = {
                 '<div class="input-group-ct ' + (type == 'other' ? 'cr-other to' : '') + '" >' +
                 '<input type="number" class="form-control-ct">' +
                 '</div></div>');
-
+        let $jq = jQuery.noConflict();
+        $jq(document).ready(function(){
+            $jq(".sidebar_inner .calc .input-group-ct.from input").attr("value", 1)
+        });
         input.find("input").on({
             keyup: function (e) {
                 crtools.converter.initData(e);
@@ -337,9 +340,6 @@ crtools.converter = {
     removeCurrentClass: function () {
     }, 
 };
-$(document).ready(function(){
-    $(".sidebar_inner .calc .input-group-ct.from input").attr("value", 1)
-});
 /** End Crypto Converter */
 /** Start Graph */
 var crtools = crtools || {};
