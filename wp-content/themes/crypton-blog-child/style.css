@@ -648,6 +648,11 @@ article .post_content.entry-content div div iframe{
     border-collapse: collapse;
 }
 
+.crypto-table a {
+    white-space: nowrap;
+    font-size: 12px;
+}
+
 .crypto-table-load-more:disabled {
     opacity: 0.65; 
     cursor: not-allowed;
@@ -664,6 +669,7 @@ article .post_content.entry-content div div iframe{
 .crypto-table-data {
     font-weight: 400;
     padding: 1em 1.5em;
+    vertical-align: middle;
 }
 
 #ico-calendar .crypto-table-data {
@@ -673,7 +679,8 @@ article .post_content.entry-content div div iframe{
 .crypto-table-row {
     transition: background 0.25s ease;
     border-bottom: 1px solid #ddd;
-    margin: 1em 1.5em;
+    margin: 0.5em 0;
+    /*margin: 1em 1.5em;*/
 }
 
 #ico-calendar .crypto-table-row { 
@@ -783,6 +790,7 @@ and also iPads specifically.
     .crypto-table-head,
     .crypto-table-body,
     .crypto-table-header,
+    .crypto-table-row,
     .crypto-table-data { 
         display: block; 
     }
@@ -790,6 +798,10 @@ and also iPads specifically.
     #ico-calendar .crypto-table-row .crypto-table-data {
         min-width: 0 !important;
         padding-left: 30% !important;
+    }
+
+    #ico-calendar .crypto-table-row.active {
+        display: block;
     }
 
     #marketcap .crypto-table-row .crypto-table-data {
@@ -839,18 +851,6 @@ and also iPads specifically.
 
     .crypto-table {
         margin: 0;
-    }
-
-    #ico-calendar .crypto-table-row.active .crypto-table-data:last-child {
-        border-bottom: 1px solid #ccc;
-    }
-
-    #ico-calendar .crypto-table-row.active {
-        border-bottom: 1em solid #fff;
-    }
-
-    #ico-calendar .crypto-table-row.active .crypto-table-data:first-child {
-        border-top: 1px solid #ccc;
     }
 }
 
